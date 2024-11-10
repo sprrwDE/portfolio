@@ -1,0 +1,21 @@
+@import './../../../styles.scss';
+
+header {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        >img {
+            z-index: 999;
+            width: 200px;
+        }
+    }
+}

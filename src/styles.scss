@@ -1,45 +1,82 @@
 /* Variables */
 
+$primary: #08463b;
+/* 
+$secondary: ; 
+$font-dark: ;
+*/
+$bright: #ffffff;
+$background: #1c1c1c;
+
 /* Document & Container */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 html {
-    height: 100%;
-    font-family: sans-serif;
+  height: 100%;
+  font-family: sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
-    width: 100%;
+  flex: 1;
+  width: 100%;
 }
 
 .container {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 }
 
 /* Link Styling */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Headlines */
 
-h1, h2, h3, h4, h5, h6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Fira_Code";
+  src: url("assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("assets/fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.bright {
+  color: $bright;
 }
