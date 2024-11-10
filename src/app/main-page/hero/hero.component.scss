@@ -2,7 +2,7 @@
 
 section {
     height: 100vh;
-    background: linear-gradient($primary, $background);
+    background: linear-gradient(45deg, $background 40%, $primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +14,7 @@ section {
         }
         >h2 {
             font-size: 128px;
+            font-weight: 700;
         }
     }
 }
