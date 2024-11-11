@@ -5,7 +5,8 @@ $primary: #08463b;
 $secondary: ; 
 $font-dark: ;
 */
-$bright: #ffffff;
+$main: #ffffff;
+$accent: #3dcfb6;
 $background: #1c1c1c;
 
 /* Document & Container */
@@ -19,8 +20,9 @@ $background: #1c1c1c;
 
 html {
   height: 100%;
-  font-family: sans-serif;
   font-family: 'Karla', sans-serif;
+  background-color: $background;
+  color: $main;
 }
 
 body {
@@ -44,6 +46,7 @@ main {
 
 a {
   text-decoration: none;
+  color: $accent;
 }
 
 /* Headlines */
@@ -77,6 +80,12 @@ h6 {
 
 
 
-.bright {
-  color: $bright;
+.main {
+  color: $main;
+  font-family: 'Karla', sans-serif;
 }
+
+.accent {
+    color: $accent;
+    font-family: 'Fira_Code', serif;
+  }
