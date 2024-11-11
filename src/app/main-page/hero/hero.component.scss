@@ -6,6 +6,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   > .hero-content {
     text-align: center;
     z-index: 3;
@@ -100,13 +101,19 @@ section {
       }
     }
   }
-}
-.carousel {
-  height: 64px;
-  width: 100vw;
-  backdrop-filter: blur(5.300000190734863px);
-  background-color: #FFFFFF1F;
-  position: absolute;
-  bottom: 64px;
-  transform: rotate(-3deg);
+  .carousel-wrapper {
+    overflow: hidden;
+    >  .carousel {
+      height: 64px;
+      width: 100vw; 
+      backdrop-filter: blur(5.3px);
+      background-color: #FFFFFF1F;
+      position: absolute;
+      bottom: 64px;
+      left: 50%; 
+      transform: translateX(-50%) rotate(-3deg); 
+      z-index: 4;
+    }
+  }
+
 }

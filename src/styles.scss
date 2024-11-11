@@ -1,13 +1,16 @@
-/* Variables */
+/* Colors */
 
 $primary: #08463b;
-/* 
-$secondary: ; 
-$font-dark: ;
-*/
 $main: #ffffff;
 $accent: #3dcfb6;
 $background: #1c1c1c;
+
+/* Screen-Sizes */
+
+$screen: 1500px;
+$laptop: 1024px;
+$tab: 768px;
+$phone: 480px;
 
 /* Document & Container */
 
@@ -40,6 +43,9 @@ main {
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
+  @media screen and (max-width: $screen){
+    padding: 0 2%;
+  }
 }
 
 /* Link Styling */
