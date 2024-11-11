@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillsService, Skill } from '../../models/skills.service';
+import { SkillsService, Skill } from '../../services/skills.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -14,6 +14,5 @@ export class TechStackComponent {
 
   constructor(private skillsService: SkillsService) {
     this.skillDb = this.skillsService.getSkills();
-    console.log(this.skillDb);
   }
 }

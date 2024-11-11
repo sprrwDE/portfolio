@@ -1,5 +1,9 @@
-<section>
-    <div *ngFor="let skill of skillDb">
-        <img [src]="skill.src" [alt]="skill.alt">
+<section class="container">
+  <div class="content"></div>
+  <div class="images">
+    <div *ngFor="let skill of skillDb" class="skill-wrapper">
+      <img [src]="skill.src" [alt]="skill.alt" />
+      <p>{{ skill.name }}</p>
     </div>
+  </div>
 </section>
