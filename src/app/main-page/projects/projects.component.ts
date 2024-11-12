@@ -15,6 +15,8 @@ import { DialogComponent } from './dialog/dialog.component';
 })
 export class ProjectsComponent {
   projectDb: Project[] = [];
+  currentProject: Project | null = null;
+  isDialogOpen = false;
 
   constructor(
     private projectService: ProjectsService,
@@ -23,13 +25,13 @@ export class ProjectsComponent {
     console.log(this.projectDb);
   }
 
-  isDialogOpen = false;
-
-  openDialog() {
+  openDialog(project: Project) { 
+    this.currentProject = project; 
     this.isDialogOpen = true;
   }
 
   closeDialog() {
+    this.currentProject = null; 
     this.isDialogOpen = false;
   }
 

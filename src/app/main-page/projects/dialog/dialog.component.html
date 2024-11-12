@@ -1,6 +1,6 @@
 <div class="dialog-backdrop" (click)="onClose()"></div>
 <div class="dialog-content">
-  <h2>Dialog Titel</h2>
-  <p>Dies ist ein benutzerdefinierter Dialoginhalt.</p>
+  <h2>{{project?.name}}</h2>
+  <p>{{project?.description}}</p>
   <button (click)="onClose()">Schließen</button>
 </div>

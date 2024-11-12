@@ -1,12 +1,13 @@
 <section class="container">
-    <div *ngFor="let project of projectDb" (click)="openDialog()">
-      <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-      <a [href]="project.url" target="_blank">Watch live</a>
-      <div *ngFor="let skill of project.skillset">
-        <p>{{ skill }}</p>
-      </div>
+  <div *ngFor="let project of projectDb" (click)="openDialog(project)">
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.description }}</p>
+    <a [href]="project.url" target="_blank">Watch live</a>
+    <div *ngFor="let skill of project.skillset">
+      <p>{{ skill }}</p>
     </div>
-  </section>
-  
-  <app-dialog *ngIf="isDialogOpen" (close)="closeDialog()"></app-dialog>
+  </div>
+</section>
+
+<!-- Übergibt currentIndex an den Dialog -->
+<app-dialog *ngIf="isDialogOpen" [project]="currentProject" (close)="closeDialog()"></app-dialog>
