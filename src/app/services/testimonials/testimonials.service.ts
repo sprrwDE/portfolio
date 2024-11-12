@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 
 export interface Testimonial {
   name: string,
-  testimonial: string
+  testimonial: string,
+  status: string
 }
 
 @Injectable({
@@ -14,7 +15,8 @@ export class TestimonialsService {
 
   testimonialDb:Testimonial[] = [{
     name: 'Mehmet Deliaci',
-    testimonial: 'Lorem'
+    testimonial: 'Lorem',
+    status: 'Project Partner'
   }]
 
   getTestimonials() {
