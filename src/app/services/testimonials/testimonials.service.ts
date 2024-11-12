@@ -1,0 +1,23 @@
+import { Injectable } from '@angular/core';
+
+export interface Testimonial {
+  name: string,
+  testimonial: string
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TestimonialsService {
+
+  constructor() { }
+
+  testimonialDb:Testimonial[] = [{
+    name: 'Mehmet Deliaci',
+    testimonial: 'Lorem'
+  }]
+
+  getTestimonials() {
+    return this.testimonialDb;
+  }
+}
