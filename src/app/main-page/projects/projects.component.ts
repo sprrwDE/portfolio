@@ -4,7 +4,6 @@ import {
   Project,
 } from '../../services/projects/projects.service';
 import { CommonModule } from '@angular/common';
-import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
@@ -19,21 +18,19 @@ export class ProjectsComponent {
 
   constructor(
     private projectService: ProjectsService,
-    public dialog: MatDialog
   ) {
     this.projectDb = this.projectService.getProjects();
     console.log(this.projectDb);
   }
 
-  openDialog(project: Project) {
-    this.dialog.open(DialogComponent, {
-      data: {
-        name: project.name,
-        image: project.image,
-        description: project.description,
-        url: project.url,
-        skillset: project.skillset,
-      },
-    });
+  isDialogOpen = false;
+
+  openDialog() {
+    this.isDialogOpen = true;
   }
+
+  closeDialog() {
+    this.isDialogOpen = false;
+  }
+
 }

@@ -1,7 +1,6 @@
-<h2>{{ data.name }}</h2>
-<img [src]="data.image" alt="{{ data.name }}" *ngIf="data.image">
-<p>{{ data.description }}</p>
-<a [href]="data.url" target="_blank" *ngIf="data.url">Watch live</a>
-<div *ngFor="let skill of data.skillset">
-  <p>{{ skill }}</p>
+<div class="dialog-backdrop" (click)="onClose()"></div>
+<div class="dialog-content">
+  <h2>Dialog Titel</h2>
+  <p>Dies ist ein benutzerdefinierter Dialoginhalt.</p>
+  <button (click)="onClose()">Schließen</button>
 </div>
