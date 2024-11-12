@@ -1,0 +1,9 @@
+@import "./../../../styles.scss";
+
+.container {
+    padding: 120px 0;
+    width: 100%;
+    >div{
+        width: 100%;
+    }
+}
