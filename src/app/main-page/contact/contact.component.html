@@ -1,16 +1,25 @@
 <div class="container">
-  <form (ngSubmit)="onSubmit()" #formRef="ngForm">
+  <form (ngSubmit)="onSubmit(formRef)" #formRef="ngForm">
     
     <label for="name">Name</label>
-    <input [(ngModel)]="contactData.name"  type="text" id="fname" name="firstname" placeholder="Your name.." ngModel required>
+    <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name"  type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    @if (!name.valid && name.touched && !name.disabled) {
+      <span>Please enter your name!</span>
+    }
   
     <label for="email">E-Mail</label>
-    <input [(ngModel)]="contactData.email"  type="email" id="email" name="email" placeholder="Your E-Mail" ngModel required>
+    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your E-Mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+    @if (!email.valid && email.touched && !email.disabled) {
+      <span>Please enter your Email!</span>
+    }
   
     <label for="subject">Subject</label>
-    <textarea [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." ngModel style="height:200px"></textarea>
+    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    @if (!message.valid && message.touched && !message.disabled) {
+      <span>Please enter a message!</span>
+    }
   
-    <button type="submit" [disabled]="formRef.invalid">Submit</button>
+    <button type="submit">Submit</button>
   
   </form>
 </div>

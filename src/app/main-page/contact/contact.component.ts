@@ -1,5 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 interface ContactData {
   name: string;
@@ -10,19 +11,21 @@ interface ContactData {
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-  
+
   contactData: ContactData = {
     name: '',
     email: '',
     message: '',
   };
 
-  onSubmit() {
-    console.log(this.contactData);
+  onSubmit(formRef: NgForm) {
+    if(formRef.valid && formRef.submitted) {
+      console.log(this.contactData);
+    }
   }
 }
