@@ -7,8 +7,8 @@
     facilis explicabo quidem natus quia culpa id dignissimos incidunt atque.
   </p>
   <div
-    *ngFor="let project of projectDb"
-    (click)="openDialog(project)"
+    *ngFor="let project of projectDb, let index = index"
+    (click)="openDialog(index)"
     class="wrapper"
   >
     <h3>{{ project.name }}</h3>
@@ -24,7 +24,8 @@
 <app-dialog
   *ngIf="isDialogOpen"
   [project]="currentProject"
+  [projectDb]="projectDb" 
+  [currentIndex]="currentIndex"
   (close)="closeDialog()"
+  (updateIndex)="currentIndex = $event"
 ></app-dialog>
-
-<!-- Eventuell doch mit currentindex lösen, wegen nextproject... vielleicht auch workaround? -->

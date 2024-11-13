@@ -7,8 +7,6 @@
   <div class="image-wrapper">
     <p (click)="onClose()">X</p> <!-- hier icon -->
     <img src="{{ project?.image }}" />
-    <p class="next">Next project</p> <!-- hier icon -->
+    <p class="next" (click)="nextDialog()">Next project</p> <!-- hier icon -->
   </div>
 </div>
-
-<!-- Eventuell doch mit currentindex lösen, wegen nextproject... vielleicht auch workaround-->

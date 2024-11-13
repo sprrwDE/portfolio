@@ -17,17 +17,18 @@ export class ProjectsComponent {
   projectDb: Project[] = [];
   currentProject: Project | null = null;
   isDialogOpen = false;
+  currentIndex: number = 0;
 
   constructor(
     private projectService: ProjectsService,
   ) {
     this.projectDb = this.projectService.getProjects();
-    console.log(this.projectDb);
   }
 
-  openDialog(project: Project) { 
-    this.currentProject = project; 
+  openDialog(index: number) { 
+    this.currentProject = this.projectDb[index]; 
     this.isDialogOpen = true;
+    this.currentIndex = index;
   }
 
   closeDialog() {
