@@ -1,7 +1,44 @@
 <header>
   <div class="container">
     <div class="navbar">
-      <div class="lang">DE / EN</div>
+      <div class="lang"><ng-toggle
+        
+        [value]="1"
+        [disabled]="false"
+        [width]="60"
+        [height]="30"
+        [margin]="4"
+        [fontSize]="14"
+        [labels]="{
+          'unchecked': 'DE',
+          'checked': 'EN'
+        }"
+        [color]="{
+          'unchecked': 'transparent',
+          'checked': 'transparent',
+          'disabled': 'transparent'
+        }"
+        [switchColor]="{
+          'checked': '#3dcfb6',
+          'unchecked': '#3dcfb6',
+          'disabled': '#c0c0c0'
+        }"
+        [values]="{
+          'unchecked': 0,
+          'checked': 1
+        }"
+        [textAlign]="{
+          'checked': 'left',
+          'unchecked': 'right'
+        }"
+        [fontColor]="{
+          'checked': '#ffffff',
+          'unchecked': '#ffffff',
+          'disabled': '#ffffff'
+        }"
+      ></ng-toggle>
+      
+      </div>
       <nav>
         <a href="#about">About me</a>
         <a href="#skills">Skills</a>
