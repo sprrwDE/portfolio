@@ -1,15 +1,30 @@
 <section class="container">
-  <div *ngFor="let project of projectDb" (click)="openDialog(project)" class="wrapper">
+  <span class="eb">Portfolio</span>
+  <h3 class="hl-big">Featured Projects</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quo dolore
+    voluptatem quis eligendi et quasi quos libero. Accusantium recusandae
+    facilis explicabo quidem natus quia culpa id dignissimos incidunt atque.
+  </p>
+  <div
+    *ngFor="let project of projectDb"
+    (click)="openDialog(project)"
+    class="wrapper"
+  >
     <h3>{{ project.name }}</h3>
     <p>{{ project.description }}</p>
-    <a [href]="project.urls.project" target="_blank">Watch live</a><br>
+    <a [href]="project.urls.project" target="_blank">Watch live</a><br />
     <a [href]="project.urls.github" target="_blank">Github</a>
     <div *ngFor="let skill of project.skillset">
-      <p>{{ skill }}</p>
+      <p>{{ skill.name }}</p>
     </div>
   </div>
 </section>
 
-<app-dialog *ngIf="isDialogOpen" [project]="currentProject" (close)="closeDialog()"></app-dialog>
+<app-dialog
+  *ngIf="isDialogOpen"
+  [project]="currentProject"
+  (close)="closeDialog()"
+></app-dialog>
 
-<!-- Eventuell doch mit currentindex lösen, wegen nextproject... vielleicht auch workaround-->
+<!-- Eventuell doch mit currentindex lösen, wegen nextproject... vielleicht auch workaround? -->

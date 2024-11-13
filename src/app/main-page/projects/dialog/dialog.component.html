@@ -1,9 +1,14 @@
 <div class="dialog-backdrop" (click)="onClose()"></div>
 <div class="dialog-content">
-  <h2>{{project?.name}}</h2>
-  <p>{{project?.description}}</p>
-  <button (click)="onClose()">Schließen</button>
+  <div class="text-wrapper">
+    <h2>{{ project?.name }}</h2>
+    <p>{{ project?.description }}</p>
+  </div>
+  <div class="image-wrapper">
+    <p (click)="onClose()">X</p> <!-- hier icon -->
+    <img src="{{ project?.image }}" />
+    <p class="next">Next project</p> <!-- hier icon -->
+  </div>
 </div>
-
 
 <!-- Eventuell doch mit currentindex lösen, wegen nextproject... vielleicht auch workaround-->

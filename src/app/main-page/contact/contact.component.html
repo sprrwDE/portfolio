@@ -1,25 +1,63 @@
-<div class="container p120">
-  <form (ngSubmit)="onSubmit(formRef)" #formRef="ngForm">
-    
-    <label for="name">Name</label>
-    <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name"  type="text" id="fname" name="firstname" placeholder="Your name.." required>
-    @if (!name.valid && name.touched && !name.disabled) {
+<div class="container section-wrapper">
+  <div class="content">
+    <span class="eb">Blub</span>
+    <h2 class="hl-big">Blabb</h2>
+    <h3 class="hl-small">Got a problem to solve?</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+      debitis vitae cum alias odio sunt praesentium blanditiis voluptas sed
+      voluptates dolores quo, eius autem impedit dolore perferendis voluptate m
+      ducimus fugit?
+    </p>
+  </div>
+
+  <div class="form-wrapper">
+    <form (ngSubmit)="onSubmit(formRef)" #formRef="ngForm">
+      <label for="name">Name</label>
+      <input
+        #name="ngModel"
+        minlength="4"
+        [(ngModel)]="contactData.name"
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your name.."
+        required
+      />
+      @if (!name.valid && name.touched && !name.disabled) {
       <div class="test">Please enter your name!</div>
-    }
-  
-    <label for="email">E-Mail</label>
-    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your E-Mail" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-    @if (!email.valid && email.touched && !email.disabled) {
-      <div class="test">Please enter your Email!</div>
-    }
-  
-    <label for="subject">Subject</label>
-    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    @if (!message.valid && message.touched && !message.disabled) {
+      }
+
+      <label for="email">E-Mail</label>
+      <input
+        #email="ngModel"
+        [(ngModel)]="contactData.email"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your E-Mail"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+      @if (!email.valid && email.touched && !email.disabled) {
+      <div>Please enter your Email!</div>
+      }
+
+      <label for="subject">Subject</label>
+      <textarea
+        #message="ngModel"
+        minlength="4"
+        [(ngModel)]="contactData.message"
+        id="subject"
+        name="subject"
+        placeholder="Write something.."
+        style="height: 200px"
+      ></textarea>
+      @if (!message.valid && message.touched && !message.disabled) {
       <div class="test">Please enter a message!</div>
-    }
-  
-    <button type="submit">Submit</button>
-  
-  </form>
+      }
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </div>

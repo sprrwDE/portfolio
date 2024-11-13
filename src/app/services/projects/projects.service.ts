@@ -5,12 +5,17 @@ export interface ProjectUrls {
   github: string;
 }
 
+export interface Skillset {
+  name: string;
+  image: string;
+}
+
 export interface Project {
   name: string;
   image: string;
   description: string;
   urls: ProjectUrls;
-  skillset: string[];
+  skillset: Skillset[];
 }
 
 @Injectable({
@@ -28,17 +33,51 @@ export class ProjectsService {
         project: 'https://join.kai-schulz.dev/',
         github: '',
       },
-      skillset: ['HTML', 'CSS', 'Javascript', 'Firebase'],
+      skillset: [
+        {
+          name: 'HTML',
+          image: '',
+        },
+        {
+          name: 'CSS',
+          image: '',
+        },
+        {
+          name: 'Javascript',
+          image: '',
+        },
+        {
+          name: 'Firebase',
+          image: '',
+        },
+      ],
     },
     {
       name: 'Kai der Hai',
-      image: '',
+      image: 'assets/images/sharky.png',
       description: 'lorem',
       urls: {
         project: 'https://sharky.kai-schulz.dev/',
         github: 'https://github.com/sprrwDE/sharkie',
       },
-      skillset: ['HTML', 'CSS', 'Javascript', 'Firebase'],
+      skillset: [
+        {
+          name: 'HTML',
+          image: '',
+        },
+        {
+          name: 'CSS',
+          image: '',
+        },
+        {
+          name: 'Javascript',
+          image: '',
+        },
+        {
+          name: 'Firebase',
+          image: '',
+        },
+      ],
     },
     {
       name: 'DABubble',
@@ -48,7 +87,24 @@ export class ProjectsService {
         project: '',
         github: '',
       },
-      skillset: ['HTML', 'CSS', 'Javascript', 'Firebase'],
+      skillset: [
+        {
+          name: 'HTML',
+          image: '',
+        },
+        {
+          name: 'CSS',
+          image: '',
+        },
+        {
+          name: 'Javascript',
+          image: '',
+        },
+        {
+          name: 'Firebase',
+          image: '',
+        },
+      ],
     },
   ];
 

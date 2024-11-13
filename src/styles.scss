@@ -84,8 +84,6 @@ h6 {
   font-style: normal;
 }
 
-
-
 .main {
   color: $main;
   font-family: 'Karla', sans-serif;
@@ -95,3 +93,23 @@ h6 {
     color: $accent;
     font-family: 'Fira_Code', serif;
   }
+
+.hl-big{
+ color: $accent;
+ font-family: 'Fira_Code', serif;
+font-size: 64px;
+}
+
+.hl-small {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Fira_Code', serif;
+  color: $accent;
+}
+
+.eb {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Karla', sans-serif;
+  color: $accent;
+}
