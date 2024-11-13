@@ -2,7 +2,8 @@
   <div *ngFor="let project of projectDb" (click)="openDialog(project)" class="wrapper">
     <h3>{{ project.name }}</h3>
     <p>{{ project.description }}</p>
-    <a [href]="project.url" target="_blank">Watch live</a>
+    <a [href]="project.urls.project" target="_blank">Watch live</a><br>
+    <a [href]="project.urls.github" target="_blank">Github</a>
     <div *ngFor="let skill of project.skillset">
       <p>{{ skill }}</p>
     </div>

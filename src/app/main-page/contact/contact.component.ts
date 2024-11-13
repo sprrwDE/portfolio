@@ -26,7 +26,7 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://kai-schulz.dev/sendMail.php', // hier php datei verlinken
