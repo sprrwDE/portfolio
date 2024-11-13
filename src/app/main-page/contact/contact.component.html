@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #formRef="ngForm">
+    
+    <label for="name">Name</label>
+    <input [(ngModel)]="contactData.name"  type="text" id="fname" name="firstname" placeholder="Your name.." ngModel required>
+  
+    <label for="email">E-Mail</label>
+    <input [(ngModel)]="contactData.email"  type="email" id="email" name="email" placeholder="Your E-Mail" ngModel required>
+  
+    <label for="subject">Subject</label>
+    <textarea [(ngModel)]="contactData.message"  id="subject" name="subject" placeholder="Write something.." ngModel style="height:200px"></textarea>
+  
+    <button type="submit" [disabled]="formRef.invalid">Submit</button>
+  
+  </form>
+</div>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillsService, Skill } from '../../services/skills.service';
+import { SkillsService, Skill } from '../../services/skills/skills.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

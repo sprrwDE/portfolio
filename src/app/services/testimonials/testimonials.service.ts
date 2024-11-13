@@ -17,6 +17,14 @@ export class TestimonialsService {
     name: 'Mehmet Deliaci',
     testimonial: 'Lorem',
     status: 'Project Partner'
+  },{
+    name: 'Mehmet Deliaci',
+    testimonial: 'Lorem',
+    status: 'Project Partner'
+  },{
+    name: 'Mehmet Deliaci',
+    testimonial: 'Lorem',
+    status: 'Project Partner'
   }]
 
   getTestimonials() {
