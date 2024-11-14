@@ -18,11 +18,9 @@ export class DialogComponent {
     this.close.emit();
   }
 
-  nextDialog() {
-    if (this.currentIndex < this.projectDb.length - 1) {
-      this.currentIndex++;
+  nextDialog() {  
+      this.currentIndex = (this.currentIndex + 1) % this.projectDb.length;
       this.updateIndex.emit(this.currentIndex); 
       this.project = this.projectDb[this.currentIndex]; 
-    }
   }
 }
