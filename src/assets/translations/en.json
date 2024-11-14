@@ -1,4 +1,7 @@
 {
+    "hero": {
+      "headline": "blub"
+    },
     "projects": {
       "join": {
         "description": "This is just a test"

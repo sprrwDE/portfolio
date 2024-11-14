@@ -1,8 +1,10 @@
 {
-    "projects": {
-      "join": {
-        "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
-      }
+  "hero": {
+    "headline": "blaa"
+  },
+  "projects": {
+    "join": {
+      "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
     }
   }
-  
+}
