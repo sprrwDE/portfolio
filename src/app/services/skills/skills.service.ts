@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface Skill {
   name: string;
@@ -10,7 +11,7 @@ export interface Skill {
   providedIn: 'root',
 })
 export class SkillsService {
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   skillDb: Skill[] = [
     { name: 'HTML', src: 'assets/icons/skills/Property-1-HTML.svg', alt: '' },

@@ -1,11 +1,40 @@
 {
-    "hero": {
-      "headline": "blub"
-    },
-    "projects": {
-      "join": {
-        "description": "This is just a test"
-      }
+  "header": {
+    "about": "About me"
+  },
+
+  "hero": {
+    "headline": "Englisches blubb",
+    "work": "Check my work",
+    "contact": "Contact me"
+  },
+
+  "about": {  
+  "headline": "About me"
+  },
+
+  "skills": {
+    
+  },
+
+  "projects": {
+    "join": {
+      "description": "Join super jaaa"
     }
+  },
+
+  "testimonials": {
+    "mehmet": {
+      "text": "Englische Review",
+      "status": "Project Partner"
+    }
+  },
+
+  "contact": {
+    "solve": "Got a problem to solve?"
+  },
+
+  "footer": {
+    "imprint": "Imprint"
   }
-  
+}

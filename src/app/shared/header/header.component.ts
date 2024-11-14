@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { NgToggleModule } from 'ng-toggle-button';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgToggleModule],
+  imports: [NgToggleModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

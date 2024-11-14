@@ -1,10 +1,32 @@
 {
-  "hero": {
-    "headline": "blaa"
+  "header": {
+    "about": "Über mich"
   },
+  "hero": {
+    "headline": "Deutsches blaa",
+    "work": "Projekte ansehen",
+    "contact": "Kontakt aufnehmen"
+  },
+  "about": {
+    "headline": "Über mich"
+  },
+  "skills": {},
+
   "projects": {
     "join": {
       "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
     }
+  },
+  "testimonials": {
+    "mehmet": {
+      "text": "Deutsche Review",
+      "status": "Projekt Partner"
+    }
+  },
+  "contact": {
+    "solve": "Gibt es ein Problem, welches ich lösen soll?"
+  },
+  "footer": {
+    "imprint": "Impressum"
   }
 }

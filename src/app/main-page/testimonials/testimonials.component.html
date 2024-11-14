@@ -3,7 +3,7 @@
   <div class="outter">
     <div *ngFor="let testimonial of testimonialDb" class="wrapper">
       <h3>{{ testimonial.name }}</h3>
-      <p>{{ testimonial.testimonial }}</p>
+      <p>{{ testimonial.testimonial | translate }}</p>
       <p>{{ testimonial.status }}</p>
     </div>
   </div>

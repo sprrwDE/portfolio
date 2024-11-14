@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface Testimonial {
   name: string,
@@ -11,11 +12,11 @@ export interface Testimonial {
 })
 export class TestimonialsService {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   testimonialDb:Testimonial[] = [{
     name: 'Mehmet Deliaci',
-    testimonial: 'Lorem',
+    testimonial: 'testimonials.mehmet.text',
     status: 'Project Partner'
   },{
     name: 'Mehmet Deliaci',
