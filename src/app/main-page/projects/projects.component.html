@@ -6,17 +6,25 @@
     voluptatem quis eligendi et quasi quos libero. Accusantium recusandae
     facilis explicabo quidem natus quia culpa id dignissimos incidunt atque.
   </p>
-  <div
-    *ngFor="let project of projectDb, let index = index"
-    (click)="openDialog(index)"
-    class="wrapper"
-  >
-    <h3>{{ project.name }}</h3>
-    <p>{{ project.description }}</p>
-    <a [href]="project.urls.project" target="_blank">Watch live</a><br />
-    <a [href]="project.urls.github" target="_blank">Github</a>
-    <div *ngFor="let skill of project.skillset">
-      <p>{{ skill.name }}</p>
+  <div class="project-wrapper-outter">
+    <div
+      *ngFor="let project of projectDb; let index = index"
+      (click)="openDialog(index)"
+      class="wrapper"
+    >
+      <div class="content" (mouseover)="hoverImg = true" (mouseout)="hoverImg = false">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <div *ngFor="let skill of project.skillset">
+          <p>{{ skill.name }}</p>
+        </div>
+      </div>
+      <div class="image" *ngIf="hoverImg">
+        <img src="{{ project.image }}" alt="" class="hoverimg" />
+      </div>
+
+      <!-- <a [href]="project.urls.project" target="_blank">Watch live</a><br />
+      <a [href]="project.urls.github" target="_blank">Github</a> -->
     </div>
   </div>
 </section>
@@ -24,7 +32,7 @@
 <app-dialog
   *ngIf="isDialogOpen"
   [project]="currentProject"
-  [projectDb]="projectDb" 
+  [projectDb]="projectDb"
   [currentIndex]="currentIndex"
   (close)="closeDialog()"
   (updateIndex)="currentIndex = $event"

@@ -18,11 +18,13 @@ export class ProjectsComponent {
   currentProject: Project | null = null;
   isDialogOpen = false;
   currentIndex: number = 0;
+  hoverImg: boolean;
 
   constructor(
     private projectService: ProjectsService,
   ) {
     this.projectDb = this.projectService.getProjects();
+    this.hoverImg = false;
   }
 
   openDialog(index: number) { 
