@@ -11,8 +11,19 @@ import { CommonModule } from '@angular/common';
 })
 export class TechStackComponent {
   skillDb: Skill[] = [];
+  hover: boolean = false;
 
   constructor(private skillsService: SkillsService) {
     this.skillDb = this.skillsService.getSkills();
+  }
+
+  onMouseOver() {
+    this.hover = true;
+    console.log(this.hover)
+  }
+
+  onMouseLeave() {
+    this.hover = false;
+    console.log(this.hover)
   }
 }

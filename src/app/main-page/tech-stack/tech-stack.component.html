@@ -14,13 +14,19 @@
 
   <div class="images">
     <div *ngFor="let skill of skillDb; let i = index" class="skill-wrapper">
-      <div class="inner-wrapper">
+      <!-- Für das letzte Element -->
+      <div class="inner-wrapper" *ngIf="i === skillDb.length - 1" 
+           (mouseover)="onMouseOver()"
+           (mouseleave)="onMouseLeave()">
         <img [src]="skill.src" [alt]="skill.alt" />
         <p>{{ skill.name }}</p>
       </div>
-      
+
+      <!-- Für alle anderen Elemente -->
+      <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
+        <img [src]="skill.src" [alt]="skill.alt" />
+        <p>{{ skill.name }}</p>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- Hover beim letzten *ngIf index = skillDb.length - 1-> -->
