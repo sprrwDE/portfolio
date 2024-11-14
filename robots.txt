@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kai-schulz.dev/sitemap.xml

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface ProjectUrls {
   project: string;
@@ -22,13 +23,13 @@ export interface Project {
   providedIn: 'root',
 })
 export class ProjectsService {
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   projects: Project[] = [
     {
       name: 'Join',
       image: '',
-      description: 'lorem',
+      description: 'projects.join.description',
       urls: {
         project: 'https://join.kai-schulz.dev/',
         github: '',
@@ -109,6 +110,10 @@ export class ProjectsService {
   ];
 
   getProjects(): Project[] {
-    return this.projects;
+    return this.projects.map((project) => ({
+      ...project,
+      description: this.translate.instant(project.description),
+    }));
   }
+
 }

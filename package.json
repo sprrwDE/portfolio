@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate:sitemap": "node generate-sitemap.js"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,8 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@ngx-translate/core": "^16.0.3",
+    "@ngx-translate/http-loader": "^16.0.0",
     "ng-toggle-button": "^1.5.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

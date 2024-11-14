@@ -5,11 +5,12 @@ import {
 } from '../../services/projects/projects.service';
 import { CommonModule } from '@angular/common';
 import { DialogComponent } from './dialog/dialog.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, DialogComponent],
+  imports: [CommonModule, DialogComponent, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })

@@ -1,8 +1,9 @@
 <header>
   <div class="container">
     <div class="navbar">
-      <div class="lang"><ng-toggle
-        [value]="1"
+      <div class="lang">
+        <ng-toggle
+        [value]="currentLang === 'EN' ? 1 : 0"
         [disabled]="false"
         [width]="60"
         [height]="30"
@@ -35,6 +36,7 @@
           'unchecked': '#ffffff',
           'disabled': '#ffffff'
         }"
+        (valueChange)="toggleLanguage($event)"
       ></ng-toggle>
       
       </div>
