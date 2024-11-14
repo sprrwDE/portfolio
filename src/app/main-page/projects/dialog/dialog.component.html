@@ -1,12 +1,29 @@
 <div class="dialog-backdrop" (click)="onClose()"></div>
 <div class="dialog-content">
   <div class="text-wrapper">
+    <span class="number">0{{ currentIndex + 1 }}</span>
     <h2>{{ project?.name }}</h2>
     <p>{{ project?.description }}</p>
+    <div class="skill-wrapper">
+      <div class="skill-inner" *ngFor="let skill of project?.skillset">
+        <img src="{{ skill.image }}" />
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <a href="{{ project?.urls?.github }}" target="_blank">
+        <button>Github</button>
+      </a>
+      <a href="{{ project?.urls?.project }}" target="_blank">
+        <button>Live Test</button>
+      </a>
+    </div>
   </div>
   <div class="image-wrapper">
-    <p (click)="onClose()">X</p> <!-- hier icon -->
+    <p (click)="onClose()">X</p>
+    <!-- hier icon -->
     <img src="{{ project?.image }}" />
-    <p class="next" (click)="nextDialog()">Next project</p> <!-- hier icon -->
+    <p class="next" (click)="nextDialog()">Next project</p>
+    <!-- hier icon -->
   </div>
 </div>

@@ -19,12 +19,9 @@
           <p>{{ skill.name }}</p>
         </div>
       </div>
-      <div class="image" *ngIf="hoverImg == project.name">
+      <div class="image" *ngIf="hoverImg === project.name">
         <img src="{{ project.image }}" alt="" class="hoverimg" />
       </div>
-
-      <!-- <a [href]="project.urls.project" target="_blank">Watch live</a><br />
-      <a [href]="project.urls.github" target="_blank">Github</a> -->
     </div>
   </div>
 </section>
