@@ -12,6 +12,9 @@
         repellendus ducimus mollitia maxime at ea fugiat veniam tempora,
         accusamus hic.
       </p>
+      <span class="list-item" *ngFor="let item of ('about.content' | translate)">
+        {{item.paragraph}}
+      </span>
     </div>
   </div>
 </section>

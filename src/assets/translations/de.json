@@ -20,7 +20,15 @@
   },
   "about": {
     "headline": "Über mich",
-    "content": ["Ipsum 1", "Ipsum 2", "Ipsum 3"]
+    "content": [    {
+      "paragraph": "Test DE 1"
+    },
+    {
+      "paragraph": "Test DE 2"
+    },
+    {
+      "paragraph": "Test DE 3"
+    }]
   },
   "skills": {},
 
