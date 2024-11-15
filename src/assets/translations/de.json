@@ -5,10 +5,22 @@
   "hero": {
     "headline": "Deutsches blaa",
     "work": "Projekte ansehen",
-    "contact": "Kontakt aufnehmen"
+    "contact": "Kontakt aufnehmen",
+    "slider": [
+      {
+        "slide": "Test DE"
+      }, {
+        "slide": "Test DE 2"
+      }, {
+        "slide": "Test DE 3"
+      }, {
+        "slide": "Test DE 4"
+      }
+    ]
   },
   "about": {
-    "headline": "Über mich"
+    "headline": "Über mich",
+    "content": ["Ipsum 1", "Ipsum 2", "Ipsum 3"]
   },
   "skills": {},
 

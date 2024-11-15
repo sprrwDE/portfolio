@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+// tooltip.component.ts
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './tooltip.component.html',
-  styleUrl: './tooltip.component.scss'
+  styleUrls: ['./tooltip.component.scss']
 })
 export class TooltipComponent {
-
 }

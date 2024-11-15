@@ -14,15 +14,18 @@
 
   <div class="images">
     <div *ngFor="let skill of skillDb; let i = index" class="skill-wrapper">
-      <!-- Für das letzte Element -->
-      <div class="inner-wrapper" *ngIf="i === skillDb.length - 1" 
-           (mouseover)="onMouseOver()"
-           (mouseleave)="onMouseLeave()">
+      <div
+        class="inner-wrapper"
+        *ngIf="i === skillDb.length - 1"
+        (mouseover)="onMouseOver()"
+        (mouseleave)="onMouseLeave()"
+      >
         <img [src]="skill.src" [alt]="skill.alt" />
         <p>{{ skill.name }}</p>
+        <img src="assets/vectors/bubble.svg" *ngIf="hover" class="test" />
+        <!-- wie in Tooltip rein? -->
       </div>
 
-      <!-- Für alle anderen Elemente -->
       <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
         <img [src]="skill.src" [alt]="skill.alt" />
         <p>{{ skill.name }}</p>

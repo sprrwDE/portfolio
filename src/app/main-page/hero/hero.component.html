@@ -1,15 +1,15 @@
 <section>
   <div class="hero-content bright">
     <div class="headline-wrapper">
-      <h1 class="eyebrow">{{ 'hero.headline' | translate }}</h1>
+      <h1 class="eyebrow">{{ "hero.headline" | translate }}</h1>
       <h2 class="main-heading">Kai Schulz</h2>
     </div>
     <div class="button-wrapper">
       <a href="#projects">
-        <button>{{'hero.work' | translate}}</button>
+        <button>{{ "hero.work" | translate }}</button>
       </a>
       <a href="#contact">
-        <button>{{'hero.contact' | translate}}</button>
+        <button>{{ "hero.contact" | translate }}</button>
       </a>
     </div>
   </div>
@@ -38,5 +38,12 @@
       <div class="line-right"></div>
     </div>
   </div>
-  <div class="carousel-wrapper"><div class="carousel"></div></div>
+  <div class="carousel-wrapper">
+    <div class="carousel">
+      <span class="carousel-item" *ngFor="let item of ('hero.slider' | translate)">
+        {{item.slide}}
+      </span>
+    </div>
+  </div>
+  Í
 </section>

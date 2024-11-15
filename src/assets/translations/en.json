@@ -6,11 +6,23 @@
   "hero": {
     "headline": "Englisches blubb",
     "work": "Check my work",
-    "contact": "Contact me"
+    "contact": "Contact me",
+    "slider": [
+      {
+        "slide": "Test EN"
+      }, {
+        "slide": "Test EN 2"
+      }, {
+        "slide": "Test EN 3"
+      }, {
+        "slide": "Test EN 4"
+      }
+    ]
   },
 
   "about": {  
-  "headline": "About me"
+  "headline": "About me",
+  "content": ["Lorem 1", "Lorem 2", "Lorem 3"]
   },
 
   "skills": {

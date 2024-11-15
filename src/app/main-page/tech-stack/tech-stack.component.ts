@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SkillsService, Skill } from '../../services/skills/skills.service';
 import { CommonModule } from '@angular/common';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @Component({
   selector: 'app-tech-stack',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TooltipComponent],
   templateUrl: './tech-stack.component.html',
   styleUrl: './tech-stack.component.scss',
 })
