@@ -6,7 +6,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   > .hero-content {
     text-align: center;
     z-index: 3;
@@ -14,7 +13,6 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    overflow: hidden;
     >.headline-wrapper{
         display: flex;
         flex-direction: column;
@@ -50,7 +48,6 @@ section {
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
     > .scroll {
       display: flex;
       flex-direction: column;
@@ -91,6 +88,7 @@ section {
         transform: rotate(270deg);
         width: 8px;
         align-self: center;
+        z-index: 99;
       }
       > a {
         align-self: center;
@@ -104,7 +102,6 @@ section {
     }
   }
   .carousel-wrapper {
-    overflow: hidden;
     >  .carousel {
       height: 64px;
       width: 100vw; 
@@ -118,7 +115,6 @@ section {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      overflow: hidden;
       >.carousel-item{
         width: 250px;
         animation: scroll 40s linear infinite;
