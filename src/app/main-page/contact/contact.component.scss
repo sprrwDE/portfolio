@@ -3,10 +3,12 @@
 .section-wrapper {
   padding: 120px 0;
   display: flex;
-  >.content-wrapper {
-    width: 50%;
+  gap: 80px;
+  >.content {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 32px;
   }
   > .form-wrapper {
     width: 100%;

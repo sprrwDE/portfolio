@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  >.content-outter{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
   > .project-wrapper-outter {
     display: flex;

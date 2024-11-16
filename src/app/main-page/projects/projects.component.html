@@ -1,11 +1,13 @@
 <section class="container">
-  <span class="eb">Portfolio</span>
-  <h3 class="hl-big">Featured Projects</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quo dolore
-    voluptatem quis eligendi et quasi quos libero. Accusantium recusandae
-    facilis explicabo quidem natus quia culpa id dignissimos incidunt atque.
-  </p>
+  <div class="content-outter">
+    <span class="eb">Portfolio</span>
+    <h3 class="hl-big">Featured Projects</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quo dolore
+      voluptatem quis eligendi et quasi quos libero. Accusantium recusandae
+      facilis explicabo quidem natus quia culpa id dignissimos incidunt atque.
+    </p>
+  </div>
   <div class="project-wrapper-outter">
     <div
       *ngFor="let project of projectDb; let index = index"
@@ -17,10 +19,10 @@
         (mouseover)="hoverImg = project.name"
         (mouseout)="hoverImg = ''"
       >
-      <div class="description">
-        <h3 class="fira fs24 fw700 main">{{ project.name }}</h3>
-        <p>{{ project.description | translate }}</p>
-      </div>
+        <div class="description">
+          <h3 class="fira fs24 fw700 main">{{ project.name }}</h3>
+          <p>{{ project.description | translate }}</p>
+        </div>
 
         <div class="skills">
           <span *ngFor="let skill of project.skillset">{{ skill.name }}</span>

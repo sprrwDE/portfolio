@@ -1,10 +1,12 @@
 <section class="container testi">
-  <h3>Lörem</h3>
+  <h3 class="fira fw700 fs32 accent">Lörem</h3>
   <div class="outter">
     <div *ngFor="let testimonial of testimonialDb" class="wrapper">
-      <h3>{{ testimonial.name }}</h3>
       <p>{{ testimonial.testimonial | translate }}</p>
-      <p>{{ testimonial.status }}</p>
+      <div class="person">
+        <div class="horizontal"></div>
+        <p>{{ testimonial.name }} - {{ testimonial.status }}</p>
+      </div>
     </div>
   </div>
 </section>
