@@ -13,6 +13,7 @@ export interface Skillset {
 
 export interface Project {
   name: string;
+  tag: string;
   image: string;
   description: string;
   urls: ProjectUrls;
@@ -28,7 +29,8 @@ export class ProjectsService {
   projects: Project[] = [
     {
       name: 'Join',
-      image: '',
+      tag: 'join',
+      image: 'assets/images/join.jpeg',
       description: 'projects.join.description',
       urls: {
         project: 'https://join.kai-schulz.dev/',
@@ -37,25 +39,26 @@ export class ProjectsService {
       skillset: [
         {
           name: 'HTML',
-          image: '',
+          image: 'assets/icons/project-skillset/HTML.svg',
         },
         {
           name: 'CSS',
-          image: '',
+          image: 'assets/icons/project-skillset/CSS.svg',
         },
         {
-          name: 'Javascript',
-          image: '',
+          name: 'JavaScript',
+          image: 'assets/icons/project-skillset/Javascript.svg',
         },
         {
           name: 'Firebase',
-          image: '',
+          image: 'assets/icons/project-skillset/Firebase.svg',
         },
       ],
     },
     {
       name: 'Kai der Hai',
-      image: 'assets/images/sharky.png',
+      tag: 'join',
+      image: 'assets/images/sharky.jpeg',
       description: 'lorem',
       urls: {
         project: 'https://sharky.kai-schulz.dev/',
@@ -64,25 +67,22 @@ export class ProjectsService {
       skillset: [
         {
           name: 'HTML',
-          image: '',
+          image: 'assets/icons/project-skillset/HTML.svg',
         },
         {
           name: 'CSS',
-          image: '',
+          image: 'assets/icons/project-skillset/CSS.svg',
         },
         {
-          name: 'Javascript',
-          image: '',
-        },
-        {
-          name: 'Firebase',
-          image: '',
-        },
+          name: 'JavaScript',
+          image: 'assets/icons/project-skillset/Javascript.svg',
+        }
       ],
     },
     {
       name: 'DABubble',
-      image: '',
+      tag: 'bubble',
+      image: 'assets/images/bubble.jpeg',
       description: 'lorem',
       urls: {
         project: '',
@@ -91,19 +91,22 @@ export class ProjectsService {
       skillset: [
         {
           name: 'HTML',
-          image: '',
+          image: 'assets/icons/project-skillset/HTML.svg',
         },
         {
           name: 'CSS',
-          image: '',
+          image: 'assets/icons/project-skillset/CSS.svg',
         },
         {
-          name: 'Javascript',
-          image: '',
+          name: 'TypeScript',
+          image: 'assets/icons/project-skillset/Typescript.svg',
+        },{
+          name: 'Angular',
+          image: 'assets/icons/project-skillset/Angular.svg',
         },
         {
           name: 'Firebase',
-          image: '',
+          image: 'assets/icons/project-skillset/Firebase.svg',
         },
       ],
     },

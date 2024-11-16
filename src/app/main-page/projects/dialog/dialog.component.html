@@ -1,13 +1,14 @@
 <div class="dialog-backdrop" (click)="onClose()"></div>
 <div class="dialog-content">
   <div class="text-wrapper">
-    <span class="number">0{{ currentIndex + 1 }}</span>
-    <h2>{{ project?.name }}</h2>
-    <p>{{ project?.description || '' | translate }}</p>
+    <span class="accent carla fw700 fs128">0{{ currentIndex + 1 }}</span>
+    <h2 class="main fira fw700 fs64">{{ project?.name }}</h2>
+    <h3 class="accent fira fw700 fs24">What is this project about?</h3>
+    <p class="karla fs18">{{ project?.description || '' | translate }}</p>
     <div class="skill-wrapper">
       <div class="skill-inner" *ngFor="let skill of project?.skillset">
         <img src="{{ skill.image }}" />
-        <p>{{ skill.name }}</p>
+        <p class="karla fs18 fw400">{{ skill.name }}</p>
       </div>
     </div>
     <div class="button-wrapper">

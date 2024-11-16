@@ -31,14 +31,6 @@ section {
         justify-content: center;
         align-items: center;
         gap: 40px;
-      button {
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        padding: 16px;
-        border-radius: 32px;
-        width: 400px;
-      }
     }
   }
   > .vert-wrapper {
@@ -131,3 +123,5 @@ section {
     transform: translateX(calc(100% * 9));
   }
 }
+
+
