@@ -12,15 +12,22 @@
       (click)="openDialog(index)"
       class="wrapper"
     >
-      <div class="content" (mouseover)="hoverImg = project.name" (mouseout)="hoverImg = ''">
-        <h3>{{ project.name }}</h3>
+      <div
+        class="content"
+        (mouseover)="hoverImg = project.name"
+        (mouseout)="hoverImg = ''"
+      >
+      <div class="description">
+        <h3 class="fira fs24 fw700 main">{{ project.name }}</h3>
         <p>{{ project.description | translate }}</p>
-        <div *ngFor="let skill of project.skillset">
-          <p>{{ skill.name }}</p>
+      </div>
+
+        <div class="skills">
+          <span *ngFor="let skill of project.skillset">{{ skill.name }}</span>
         </div>
       </div>
       <div class="image" *ngIf="hoverImg === project.name">
-        <img src="{{ project.image }}" alt="" class="{{project.tag}}" />
+        <img src="{{ project.image }}" alt="" class="{{ project.tag }}" />
       </div>
     </div>
   </div>
