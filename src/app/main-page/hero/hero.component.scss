@@ -50,7 +50,7 @@ section {
         width: 32px;
         height: 48px;
         border-radius: 32px;
-        border: 1px solid white;
+        border: 1px solid $accent;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,7 +63,7 @@ section {
       }
       > .line-left {
         width: 1px;
-        background-color: white;
+        background-color: $accent;
         height: 240px;
       }
     }
@@ -81,6 +81,10 @@ section {
         width: 8px;
         align-self: center;
         z-index: 99;
+        color:white;
+        &:hover {
+          color: $accent;
+        }
       }
       > a {
         align-self: center;

@@ -42,7 +42,7 @@
         "slide": "Test EN 3"
       },
       {
-        "slide": "Test EN 4"
+        "slide": "Test EN 4"  
       }
     ]
   },
@@ -51,7 +51,7 @@
     "headline": "About me",
     "content": {
       "paragraph1": "Test EN 1",
-      "paragraph2": "Test EN 2",
+      "paragraph2": "I took too much Acid",
       "paragraph3": "Test EN 3"
     }
   },  

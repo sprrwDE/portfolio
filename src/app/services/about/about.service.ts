@@ -14,15 +14,15 @@ export class AboutService {
 
   aboutItems: ListItem[] = [
     {
-      url: 'assets/icons/highlights/cognition.svg',
-      description: 'about.content.paragraph2',
+      url: 'assets/icons/highlights/location.svg',
+      description: 'about.content.paragraph1',
     },
     {
       url: 'assets/icons/highlights/cognition.svg',
       description: 'about.content.paragraph2',
     },
     {
-      url: 'assets/icons/highlights/cognition.svg',
+      url: 'assets/icons/highlights/check.svg',
       description: 'about.content.paragraph3',
     },
   ];
