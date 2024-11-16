@@ -99,7 +99,7 @@ export class ProjectsService {
         },
         {
           name: 'TypeScript',
-          image: 'assets/icons/project-skillset/Typescript.svg',
+          image: 'assets/icons/project-skillset/TypeScript.svg',
         },{
           name: 'Angular',
           image: 'assets/icons/project-skillset/Angular.svg',

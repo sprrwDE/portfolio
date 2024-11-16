@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AboutService, ListItem } from '../../services/about/about.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,5 +11,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  aboutDb: ListItem[] = [];
 
+  constructor(private aboutService: AboutService) {
+    this.aboutDb = this.aboutService.getList();
+    console.log(this.aboutDb)
+  }
 }

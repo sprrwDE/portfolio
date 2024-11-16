@@ -1,34 +1,37 @@
-<section class="container">
-  <div class="content-wrapper">
-    <span class="eb">Lorem Ipsum</span>
-    <div class="content">
-      <h3 class="hl-big">Lorem Ipsum</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
-        eum. Voluptatibus ea eum aperiam, maiores iure modi quis quibusdam nam
-        quidem dolore veritatis vitae minus nihil inventore nostrum tempora
-        ipsa?
-      </p>
-    </div>
-  </div>
+<section>
+  <div class="outter-wrapper container">
 
-  <div class="images">
-    <div *ngFor="let skill of skillDb; let i = index" class="skill-wrapper">
-      <div
-        class="inner-wrapper"
-        *ngIf="i === skillDb.length - 1"
-        (mouseover)="onMouseOver()"
-        (mouseleave)="onMouseLeave()"
-      >
-        <img [src]="skill.src" [alt]="skill.alt" />
-        <p>{{ skill.name }}</p>
-        <img src="assets/vectors/bubble.svg" *ngIf="hover" class="test" />
-        <!-- wie in Tooltip rein? -->
+    <div class="content-wrapper">
+      <span class="eb">Lorem Ipsum</span>
+      <div class="content">
+        <h3 class="hl-big">Lorem Ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
+          eum. Voluptatibus ea eum aperiam, maiores iure modi quis quibusdam nam
+          quidem dolore veritatis vitae minus nihil inventore nostrum tempora
+          ipsa?
+        </p>
       </div>
-
-      <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
-        <img [src]="skill.src" [alt]="skill.alt" />
-        <p>{{ skill.name }}</p>
+    </div>
+  
+    <div class="images">
+      <div *ngFor="let skill of skillDb; let i = index" class="skill-wrapper">
+        <div
+          class="inner-wrapper"
+          *ngIf="i === skillDb.length - 1"
+          (mouseover)="onMouseOver()"
+          (mouseleave)="onMouseLeave()"
+        >
+          <img [src]="skill.src" [alt]="skill.alt" />
+          <p>{{ skill.name }}</p>
+          <img src="assets/vectors/bubble.svg" *ngIf="hover" class="test" />
+          <!-- wie in Tooltip rein? -->
+        </div>
+  
+        <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
+          <img [src]="skill.src" [alt]="skill.alt" />
+          <p>{{ skill.name }}</p>
+        </div>
       </div>
     </div>
   </div>

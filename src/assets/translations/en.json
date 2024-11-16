@@ -19,7 +19,8 @@
       },
       {
         "slide": "Test EN 4"
-      },{
+      },
+      {
         "slide": "Test EN"
       },
       {
@@ -30,7 +31,8 @@
       },
       {
         "slide": "Test EN 4"
-      },{
+      },
+      {
         "slide": "Test EN"
       },
       {
@@ -47,18 +49,12 @@
 
   "about": {
     "headline": "About me",
-    "content": [
-      {
-        "paragraph": "Test EN 1"
-      },
-      {
-        "paragraph": "Test EN 2"
-      },
-      {
-        "paragraph": "Test EN 3"
-      }
-    ]
-  },
+    "content": {
+      "paragraph1": "Test EN 1",
+      "paragraph2": "Test EN 2",
+      "paragraph3": "Test EN 3"
+    }
+  },  
 
   "skills": {},
 

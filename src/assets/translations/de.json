@@ -9,42 +9,49 @@
     "slider": [
       {
         "slide": "Test DE"
-      }, {
+      },
+      {
         "slide": "Test DE 2"
-      }, {
+      },
+      {
         "slide": "Test DE 3"
-      }, {
+      },
+      {
         "slide": "Test DE 4"
-      },{
+      },
+      {
         "slide": "Test DE"
-      }, {
+      },
+      {
         "slide": "Test DE 2"
-      }, {
+      },
+      {
         "slide": "Test DE 3"
-      }, {
+      },
+      {
         "slide": "Test DE 4"
-      },{
+      },
+      {
         "slide": "Test DE"
-      }, {
+      },
+      {
         "slide": "Test DE 2"
-      }, {
+      },
+      {
         "slide": "Test DE 3"
-      }, {
+      },
+      {
         "slide": "Test DE 4"
       }
     ]
   },
   "about": {
     "headline": "Über mich",
-    "content": [    {
-      "paragraph": "Test DE 1"
-    },
-    {
-      "paragraph": "Test DE 2"
-    },
-    {
-      "paragraph": "Test DE 3"
-    }]
+    "content": {
+      "paragraph1": "Test DE 1",
+      "paragraph2": "Test DE 2",
+      "paragraph3": "Test DE 3"
+    }
   },
   "skills": {},
 

@@ -5,16 +5,17 @@
   <div class="content-wrapper">
     <span class="eb">Lorem Ipsum</span>
     <div class="about-container">
-      <h2 class="hl-big">{{'about.headline' | translate}}</h2>
+      <h2 class="hl-big">{{ "about.headline" | translate }}</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quo
         sequi necessitatibus quos soluta, dolorem vitae laborum. Sed minus,
         repellendus ducimus mollitia maxime at ea fugiat veniam tempora,
         accusamus hic.
       </p>
-      <span class="list-item" *ngFor="let item of ('about.content' | translate)">
-        {{item.paragraph}}
-      </span>
+      <div class="list-item" *ngFor="let item of aboutDb">
+        <img [src]="item.url" />
+        <p>{{ item.description | translate }}</p>
+      </div>
     </div>
   </div>
 </section>
