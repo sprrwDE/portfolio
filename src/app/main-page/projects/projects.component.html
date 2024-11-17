@@ -27,7 +27,10 @@
         </div>
       </div>
       <div class="image" *ngIf="hoverImg === project.name">
-        <img src="{{ project.image }}" alt="" class="{{ project.tag }}" />
+        <div  alt="" class="{{ project.tag }}">
+          <img src="{{ project.image }}" />
+          <img class="capa" src="assets/capa2.svg"/>
+        </div>
       </div>
     </div>
   </div>

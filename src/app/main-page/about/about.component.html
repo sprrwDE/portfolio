@@ -1,6 +1,8 @@
 <section class="container">
   <div class="img-wrapper">
     <img src="assets/images/placeholder.jpeg" alt="" />
+    <img class="capa" src="assets/capa1.svg"
+      />
   </div>
   <div class="content-wrapper">
     <span class="fs24 karla fw500 accent">{{ "about.eyebrow" | translate }}</span>
@@ -11,7 +13,7 @@
       </p>
       <div class="list-item" *ngFor="let item of aboutDb">
         <img [src]="item.url" />
-        <p>{{ item.description | translate }}</p>
+        <p class="gray">{{ item.description | translate }}</p>
       </div>
     </div>
   </div>

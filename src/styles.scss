@@ -4,6 +4,11 @@ $primary: #08463b;
 $main: #ffffff;
 $accent: #3dcfb6;
 $background: #1c1c1c;
+$gray: #FFFFFFCC;
+
+.primary {
+  color: $primary;
+}
 
 .main {
   color: $main;
@@ -11,6 +16,14 @@ $background: #1c1c1c;
 
 .accent {
   color: $accent;
+}
+
+.gray {
+  color: $gray;
+}
+
+.background {
+  color: $background;
 }
 
 /* Screen-Sizes */
@@ -34,6 +47,7 @@ html {
   font-family: "Karla", sans-serif;
   background-color: $background;
   color: $main;
+  font-weight: 400;
 }
 
 body {
