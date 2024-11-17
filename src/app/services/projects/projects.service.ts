@@ -28,7 +28,7 @@ export class ProjectsService {
 
   projects: Project[] = [
     {
-      name: 'Join',
+      name: 'projects.join.name',
       tag: 'join',
       image: 'assets/images/join.jpeg',
       description: 'projects.join.description',
@@ -56,10 +56,10 @@ export class ProjectsService {
       ],
     },
     {
-      name: 'Kai der Hai',
-      tag: 'join',
+      name: 'projects.sharky.name',
+      tag: 'sharky',
       image: 'assets/images/sharky.jpeg',
-      description: 'lorem',
+      description: 'projects.sharky.description',
       urls: {
         project: 'https://sharky.kai-schulz.dev/',
         github: 'https://github.com/sprrwDE/sharkie',
@@ -80,10 +80,10 @@ export class ProjectsService {
       ],
     },
     {
-      name: 'DABubble',
+      name: 'projects.bubble.name',
       tag: 'bubble',
       image: 'assets/images/bubble.jpeg',
-      description: 'lorem',
+      description: 'projects.bubble.description',
       urls: {
         project: '',
         github: '',

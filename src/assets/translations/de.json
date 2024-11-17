@@ -3,63 +3,52 @@
     "about": "Über mich"
   },
   "hero": {
-    "headline": "Deutsches blaa",
+    "headline": "Frontend Entwickler",
     "work": "Projekte ansehen",
     "contact": "Kontakt aufnehmen",
     "slider": [
-      {
-        "slide": "Test DE"
-      },
-      {
-        "slide": "Test DE 2"
-      },
-      {
-        "slide": "Test DE 3"
-      },
-      {
-        "slide": "Test DE 4"
-      },
-      {
-        "slide": "Test DE"
-      },
-      {
-        "slide": "Test DE 2"
-      },
-      {
-        "slide": "Test DE 3"
-      },
-      {
-        "slide": "Test DE 4"
-      },
-      {
-        "slide": "Test DE"
-      },
-      {
-        "slide": "Test DE 2"
-      },
-      {
-        "slide": "Test DE 3"
-      },
-      {
-        "slide": "Test DE 4"
-      }
+      {"slide": "Verfügbar für Projekte"},
+      {"slide": "Aus Pforzheim"},
+      {"slide": "Frontend Entwickler"}
     ]
   },
   "about": {
+    "eyebrow": "Wer ich bin",
     "headline": "Über mich",
+    "description": "Blubber",
     "content": {
       "paragraph1": "Test DE 1",
       "paragraph2": "Test DE 2",
       "paragraph3": "Test DE 3"
     }
   },
-  "skills": {},
+  "skills": {
+    "eyebrow": "Wer ich bin",
+    "headline": "Über mich",
+    "description": "Blubber",
+    "headline2": {
+      "part1": "lorem",
+      "part2": "ipsum"
+    },
+    "paragraph": "blub",
+    "button": "lorem"
+  },
 
   "projects": {
+    "headline": "Vorgestellte Projekte",
+    "paragraph": "lorem ipsum",
     "join": {
+      "name": "Join",
       "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
+    },"sharky": {
+      "name": "Kai der Hai",
+      "description": "Sharky test"
+    },"bubble": {
+      "name": "DABubble",
+      "description": "Buble Test"
     }
   },
+
   "testimonials": {
     "mehmet": {
       "text": "Deutsche Review",
