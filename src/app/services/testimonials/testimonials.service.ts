@@ -15,17 +15,17 @@ export class TestimonialsService {
   constructor(private translate: TranslateService) { }
 
   testimonialDb:Testimonial[] = [{
-    name: 'Mehmet Deliaci',
-    testimonial: 'testimonials.mehmet.text',
-    status: 'Project Partner'
+    name: 'testimonials.t1.name',
+    testimonial: 'testimonials.t1.text',
+    status: 'testimonials.t1.status'
   },{
-    name: 'Mehmet Deliaci',
-    testimonial: 'Lorem',
-    status: 'Project Partner'
+    name: 'testimonials.t2.name',
+    testimonial: 'testimonials.t2.text',
+    status: 'testimonials.t2.status'
   },{
-    name: 'Mehmet Deliaci',
-    testimonial: 'Lorem',
-    status: 'Project Partner'
+    name: 'testimonials.t3.name',
+    testimonial: 'testimonials.t3.text',
+    status: 'testimonials.t3.status'
   }]
 
   getTestimonials() {

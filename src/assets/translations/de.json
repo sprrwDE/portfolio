@@ -1,15 +1,17 @@
 {
   "header": {
-    "about": "Über mich"
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte"
   },
   "hero": {
     "headline": "Frontend Entwickler",
     "work": "Projekte ansehen",
     "contact": "Kontakt aufnehmen",
     "slider": [
-      {"slide": "Verfügbar für Projekte"},
-      {"slide": "Aus Pforzheim"},
-      {"slide": "Frontend Entwickler"}
+      { "slide": "Verfügbar für Projekte" },
+      { "slide": "Aus Pforzheim" },
+      { "slide": "Frontend Entwickler" }
     ]
   },
   "about": {
@@ -36,29 +38,79 @@
 
   "projects": {
     "headline": "Vorgestellte Projekte",
+    "about": "Worum geht es in diesem Projekt?",
     "paragraph": "lorem ipsum",
     "join": {
       "name": "Join",
       "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
-    },"sharky": {
+    },
+    "sharky": {
       "name": "Kai der Hai",
       "description": "Sharky test"
-    },"bubble": {
+    },
+    "bubble": {
       "name": "DABubble",
       "description": "Buble Test"
-    }
+    },
+    "button": "Nächstes Projekt"
   },
 
   "testimonials": {
-    "mehmet": {
+    "headline": "Lorem Ipsum",
+    "t1": {
+      "name": "Mehmet Deliaci",
+      "text": "Deutsche Review",
+      "status": "Projekt Partner"
+    },
+    "t2": {
+      "name": "Achim",
+      "text": "Deutsche Review",
+      "status": "Projekt Partner"
+    },
+    "t3": {
+      "name": "Jürgen",
       "text": "Deutsche Review",
       "status": "Projekt Partner"
     }
   },
   "contact": {
-    "solve": "Gibt es ein Problem, welches ich lösen soll?"
+    "eyebrow": "blaaa",
+    "headline": "blaaa",
+    "solve": "Gibt es ein Problem, welches ich lösen soll?",
+    "paragraph": "blaaa",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Dein Name",
+        "error": "Bitte gib deinen Namen ein!"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Deine E-Mail Adresse",
+        "error": "Bitte gib deine E-Mail Adresse ein!"
+      },
+      "subject": {
+        "label": "Nachricht",
+        "placeholder": "Deine Nachricht an mich",
+        "error": "Bitte gib eine Nachricht"
+      },
+      "terms": {
+        "label": "",
+        "placeholder": {
+          "part1": "Deine Nachricht an mich",
+          "a": "Datenschutzerklärung",
+          "part2": "Deine Nachricht an mich"
+        },
+        "error": "Bitte akzeptiere die Datenschutzbestimmungen"
+      },
+      "submit": "Absenden ;)"
+    }
   },
   "footer": {
-    "imprint": "Impressum"
+    "status": "Webentwickler",
+    "location": "Pforzheim - Baden-Württemberg",
+    "portfolio": "Marketing Portfolio",
+    "imprint": "Impressum",
+    "data": "Datenschutzerklärung"
   }
 }

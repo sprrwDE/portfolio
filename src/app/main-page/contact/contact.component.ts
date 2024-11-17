@@ -8,6 +8,7 @@ interface ContactData {
   name: string;
   email: string;
   message: string;
+  terms:string;
 }
 
 @Component({
@@ -25,6 +26,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    terms: ''
   };
 
   mailTest = false;

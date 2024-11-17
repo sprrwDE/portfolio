@@ -1,11 +1,11 @@
 <section class="container testi">
-  <h3 class="fira fw700 fs32 accent">Lörem</h3>
+  <h3 class="fira fw700 fs32 accent">{{ 'testimonials.headline' | translate }}</h3>
   <div class="outter">
     <div *ngFor="let testimonial of testimonialDb" class="wrapper">
       <p>{{ testimonial.testimonial | translate }}</p>
       <div class="person">
         <div class="horizontal"></div>
-        <p>{{ testimonial.name }} - {{ testimonial.status }}</p>
+        <p>{{ testimonial.name | translate }} - {{ testimonial.status | translate }}</p>
       </div>
     </div>
   </div>
