@@ -13,24 +13,24 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    >.headline-wrapper{
-        display: flex;
-        flex-direction: column;
-        > h1 {
-            font-family: "Fira_Code", serif;
-            font-size: 40px;
-          }
-          > h2 {
-            font-size: 128px;
-            font-weight: 700;
-          }
+    > .headline-wrapper {
+      display: flex;
+      flex-direction: column;
+      > h1 {
+        font-family: "Fira_Code", serif;
+        font-size: 40px;
+      }
+      > h2 {
+        font-size: 128px;
+        font-weight: 700;
+      }
     }
     > .button-wrapper {
-        display: flex;
-        width: 60%;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
+      display: flex;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
     }
   }
   > .vert-wrapper {
@@ -81,13 +81,24 @@ section {
         width: 8px;
         align-self: center;
         z-index: 99;
-        color:white;
+        color: white;
         &:hover {
           color: $accent;
         }
       }
       > a {
         align-self: center;
+        position: relative;
+        &:hover::before {
+          content: "";
+          position: absolute;
+          right: -8px;
+          background: $accent;
+          width: 4px;
+          height: 4px;
+          border-radius: 100%;
+          bottom: calc(50%);
+        }
       }
       > .line-right {
         width: 1px;
@@ -98,34 +109,32 @@ section {
     }
   }
   .carousel-wrapper {
-    >  .carousel {
+    > .carousel {
       height: 64px;
-      width: 100vw; 
+      width: 100vw;
       backdrop-filter: blur(5.3px);
-      background-color: #FFFFFF1F;
+      background-color: #ffffff1f;
       position: absolute;
       bottom: 64px;
-      left: 50%; 
-      transform: translateX(-50%) rotate(-3deg); 
+      left: 50%;
+      transform: translateX(-50%) rotate(-3deg);
       z-index: 4;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      >.carousel-item{
+      > .carousel-item {
         width: 100%;
         animation: scroll 120s linear infinite;
       }
     }
   }
-
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(0%);
-  } 100% {
+  }
+  100% {
     transform: translateX(calc(100% * 9));
   }
 }
-
-

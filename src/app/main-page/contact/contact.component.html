@@ -68,14 +68,13 @@
       }
       <div class="seperator"></div>
 
-      <label for="terms" class="w100">
+      <label for="terms" class="w100  fira plr24">
         <input
           #terms="ngModel"
           [(ngModel)]="contactData.terms"
           type="checkbox"
           id="terms"
           name="terms"
-          class="fira plr24"
           required
         />
         {{'contact.form.terms.placeholder.part1' | translate}} <a href="/data-protection/">{{'contact.form.terms.placeholder.a' | translate}}</a> {{'contact.form.terms.placeholder.part2' | translate}}

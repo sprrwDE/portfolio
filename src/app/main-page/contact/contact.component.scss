@@ -20,6 +20,10 @@
       border: unset; 
       box-sizing: border-box; 
       background-color: transparent;
+      &:focus{
+        outline: none;
+        caret-color: white;
+      }
     }
 
     button[type="submit"] {
