@@ -17,49 +17,49 @@
   "about": {
     "eyebrow": "Wer ich bin",
     "headline": "Über mich",
-    "description": "Blubber",
+    "description": "Hi, ich bin Kai Schulz, ein Frontend-Entwickler aus Pforzheim. Meine Leidenschaft für IT und die unendlichen Möglichkeiten in diesem Bereich treiben mich an, optisch ansprechende und intuitive Websites und Anwendungen zu gestalten.",
     "content": {
-      "paragraph1": "Test DE 1",
-      "paragraph2": "Test DE 2",
-      "paragraph3": "Test DE 3"
+      "paragraph1": "Ich bin flexibel und arbeite sowohl vor Ort in Pforzheim als auch remote effizient und zuverlässig. Offen für neue Herausforderungen, suche ich stets nach Möglichkeiten, mein Wissen und meine Fähigkeiten weiterzuentwickeln.",
+      "paragraph2": "Ich bin aufgeschlossen und stets auf der Suche nach neuen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu erweitern.",
+      "paragraph3": "Für mich ist Programmieren nicht nur das Schreiben von Code – es ist eine kreative Art des Problemlösens. Ich schätze es, komplexe technische Anforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So unterstütze ich meine Kunden dabei, ihre Ziele zu erreichen und ihre Visionen Wirklichkeit werden zu lassen."
     }
   },
   "skills": {
-    "eyebrow": "Wer ich bin",
-    "headline": "Über mich",
-    "description": "Blubber",
+    "eyebrow": "Technologien",
+    "headline": "Skills",
+    "description": "Meine berufliche Reise umfasst die Arbeit an diversen Projekten, bei denen ich eine Vielzahl von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung stets einen Schritt voraus zu sein.",
     "headline2": {
-      "part1": "lorem",
-      "part2": "ipsum"
+      "part1": "Sie benötigen",
+      "part2": "weitere Fähigkeiten?"
     },
-    "paragraph": "blub",
-    "button": "lorem"
+    "paragraph": "Fühlen Sie sich frei, mich zu kontaktieren. Ich freue mich darauf, mein Wissen weiter auszubauen und neue Herausforderungen anzugehen.",
+    "button": "Sprechen Sie mich an!"
   },
 
   "projects": {
     "headline": "Vorgestellte Projekte",
     "about": "Worum geht es in diesem Projekt?",
-    "paragraph": "lorem ipsum",
+    "paragraph": "Entdecken Sie eine Auswahl meiner Arbeiten hier – Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
     "join": {
       "name": "Join",
-      "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, welches dir ermöglicht Kontakte und Tasks zu verwalten."
+      "description": "Join ist ein einfaches Drag-and-Drop Kanban Board, geschrieben in HTML, CSS und JavaScript, welches dir ermöglicht Kontakte und Tasks zu verwalten."
     },
     "sharky": {
       "name": "Kai der Hai",
-      "description": "Sharky test"
+      "description": "Kai der Hai ist ein 2D-Sidescroller Browserspiel in welchem man einen Hai durch gefährliche Gewässer steuern und mit verschiedenen Attacken Gegner bekämpfen kann"
     },
     "bubble": {
       "name": "DABubble",
-      "description": "Buble Test"
+      "description": "DABubble ist ein Chat-Messenger im Stil von Slack. Das Projekt befindet sich derzeit noch in der Entwicklung."
     },
     "button": "Nächstes Projekt"
   },
 
   "testimonials": {
-    "headline": "Lorem Ipsum",
+    "headline": "Was meine Kollegen über mich sagen",
     "t1": {
       "name": "Mehmet Deliaci",
-      "text": "Deutsche Review",
+      "text": "Ich habe mit Kai zusammen am Join Projekt gearbeitet. Mit seiner/ihrer zuverlässigen Arbeitsweise und kreativen Ideen hat er wesentlich zum Erfolg unseres Projekts beigetragen. Besonders beeindruckt hat mich seine Fähigkeit, komplexe Aufgaben effizient zu lösen und dabei immer das Team im Blick zu behalten.",
       "status": "Projekt Partner"
     },
     "t2": {
@@ -74,10 +74,12 @@
     }
   },
   "contact": {
-    "eyebrow": "blaaa",
-    "headline": "blaaa",
+    "eyebrow": "Jetzt Kontaktieren",
+    "headline": "Lassen Sie uns zusammenarbeiten!",
     "solve": "Gibt es ein Problem, welches ich lösen soll?",
-    "paragraph": "blaaa",
+    "paragraph": "Kontaktieren Sie mich über dieses Formular – ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "paragraph2": "Benötigen Sie einen Frontend-Entwickler?",
+    "span": " Lassen Sie uns sprechen!",
     "form": {
       "name": {
         "label": "Name",

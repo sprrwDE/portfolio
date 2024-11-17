@@ -1,81 +1,116 @@
 {
   "header": {
-    "about": "About me"
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects"
   },
-
   "hero": {
-    "headline": "Englisches blubb",
-    "work": "Check my work",
-    "contact": "Contact me",
+    "headline": "Frontend Developer",
+    "work": "View Projects",
+    "contact": "Get in Touch",
     "slider": [
-      {
-        "slide": "Test EN"
-      },
-      {
-        "slide": "Test EN 2"
-      },
-      {
-        "slide": "Test EN 3"
-      },
-      {
-        "slide": "Test EN 4"
-      },
-      {
-        "slide": "Test EN"
-      },
-      {
-        "slide": "Test EN 2"
-      },
-      {
-        "slide": "Test EN 3"
-      },
-      {
-        "slide": "Test EN 4"
-      },
-      {
-        "slide": "Test EN"
-      },
-      {
-        "slide": "Test EN 2"
-      },
-      {
-        "slide": "Test EN 3"
-      },
-      {
-        "slide": "Test EN 4"  
-      }
+      { "slide": "Available for Projects" },
+      { "slide": "Based in Pforzheim" },
+      { "slide": "Frontend Developer" }
     ]
   },
-
   "about": {
-    "headline": "About me",
+    "eyebrow": "Who I Am",
+    "headline": "About Me",
+    "description": "Hi, I’m Kai Schulz, a Frontend Developer based in Pforzheim. Driven by my passion for IT and its endless possibilities, I focus on creating visually appealing and intuitive websites and applications.",
     "content": {
-      "paragraph1": "Test EN 1",
-      "paragraph2": "Test En 2",
-      "paragraph3": "Test EN 3"
-    }
-  },  
-
-  "skills": {},
-
-  "projects": {
-    "join": {
-      "description": "Join super jaaa"
+      "paragraph1": "I am flexible and work efficiently both on-site in Pforzheim and remotely. Always open to new challenges, I continuously seek opportunities to expand my knowledge and skills.",
+      "paragraph2": "I am open-minded and always eager to take on new challenges to continuously enhance my knowledge and skills.",
+      "paragraph3": "For me, programming is more than just writing code – it’s a creative way of solving problems. I enjoy transforming complex technical requirements into simple, user-friendly solutions, helping my clients achieve their goals and bring their visions to life."
     }
   },
-
+  "skills": {
+    "eyebrow": "Technologies",
+    "headline": "Skills",
+    "description": "My journey has involved working on diverse projects, utilizing a wide range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to continuously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+    "headline2": {
+      "part1": "Do you need",
+      "part2": "more skills?"
+    },
+    "paragraph": "Feel free to contact me. I look forward to building on my existing knowledge and taking on new challenges.",
+    "button": "Get in Touch!"
+  },
+  "projects": {
+    "headline": "Featured Projects",
+    "about": "What is this project about?",
+    "paragraph": "Explore a selection of my work here – interact with the projects to see my skills in action.",
+    "join": {
+      "name": "Join",
+      "description": "Join is a simple drag-and-drop Kanban board, built with HTML, CSS, and JavaScript, enabling you to manage contacts and tasks."
+    },
+    "sharky": {
+      "name": "Kai the Shark",
+      "description": "Kai the Shark is a 2D side-scroller browser game where you navigate a shark through dangerous waters and fight enemies with various attacks."
+    },
+    "bubble": {
+      "name": "DABubble",
+      "description": "DABubble is a chat messenger inspired by Slack. The project is currently under development."
+    },
+    "button": "Next Project"
+  },
   "testimonials": {
-    "mehmet": {
-      "text": "Englische Review",
+    "headline": "What My Colleagues Say About Me",
+    "t1": {
+      "name": "Mehmet Deliaci",
+      "text": "I worked with Kai on the Join project. With his reliable work ethic and creative ideas, he significantly contributed to the success of our project. I was especially impressed by his ability to solve complex tasks efficiently while keeping the team in focus.",
+      "status": "Project Partner"
+    },
+    "t2": {
+      "name": "Achim",
+      "text": "German review",
+      "status": "Project Partner"
+    },
+    "t3": {
+      "name": "Jürgen",
+      "text": "German review",
       "status": "Project Partner"
     }
   },
-
   "contact": {
-    "solve": "Got a problem to solve?"
+    "eyebrow": "Contact Now",
+    "headline": "Let’s Work Together!",
+    "solve": "Is there a problem I can solve?",
+    "paragraph": "Contact me through this form – I’m excited to hear from you, learn about your ideas, and contribute to your projects with my work.",
+    "paragraph2": "Need a Frontend Developer?",
+    "span": " Let’s talk!",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name",
+        "error": "Please enter your name!"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your Email Address",
+        "error": "Please enter your email address!"
+      },
+      "subject": {
+        "label": "Message",
+        "placeholder": "Your message to me",
+        "error": "Please enter a message"
+      },
+      "terms": {
+        "label": "",
+        "placeholder": {
+          "part1": "Your message to me",
+          "a": "Privacy Policy",
+          "part2": "Your message to me"
+        },
+        "error": "Please accept the privacy policy"
+      },
+      "submit": "Submit ;)"
+    }
   },
-
   "footer": {
-    "imprint": "Imprint"
+    "status": "Web Developer",
+    "location": "Pforzheim - Baden-Württemberg",
+    "portfolio": "Marketing Portfolio",
+    "imprint": "Imprint",
+    "data": "Privacy Policy"
   }
 }

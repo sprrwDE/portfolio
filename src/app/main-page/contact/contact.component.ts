@@ -32,7 +32,7 @@ export class ContactComponent {
   mailTest = false;
 
   post = {
-    endPoint: 'https://kai-schulz.dev/sendMail.php', // hier php datei verlinken
+    endPoint: 'https://kai-schulz.dev/sendMail.php', 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

@@ -35,9 +35,13 @@
         align-items: center;
         padding: 40px 32px;
         border-bottom: 1px solid $accent;
-        &:hover {
-          background-color: black;
+        &.first{
+          border-top: 1px solid $accent!important;
         }
+        &:hover {
+          background-color: $primary;
+        }
+ 
         >.description {
           display: flex;
           flex-direction: column;
@@ -49,6 +53,7 @@
           align-items: center;
           flex-direction: row;
         }
+
       }
 
       > .image {

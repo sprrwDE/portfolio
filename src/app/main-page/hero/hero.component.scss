@@ -112,8 +112,8 @@ section {
       justify-content: space-between;
       align-items: center;
       >.carousel-item{
-        width: 250px;
-        animation: scroll 40s linear infinite;
+        width: 100%;
+        animation: scroll 120s linear infinite;
       }
     }
   }

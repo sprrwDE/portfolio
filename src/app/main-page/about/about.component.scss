@@ -41,7 +41,10 @@ section {
         align-items: center;
         gap: 16px;
         > img {
-          width: 50px;
+          width: 40px;
+        }
+        > p {
+          width: 100%;
         }
       }
     }

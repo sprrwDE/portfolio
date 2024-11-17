@@ -17,6 +17,9 @@
             border: 1px solid white;
             border-radius: 20px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
             >.person{
                 display: flex;
                 align-items: center;

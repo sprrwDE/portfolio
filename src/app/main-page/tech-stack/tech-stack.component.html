@@ -1,19 +1,27 @@
 <section>
   <div class="outter-wrapper container">
-
     <div class="content-wrapper">
-      <span class="fs24 karla fw500 accent">{{ 'skills.eyebrow' | translate }}</span>
+      <span class="fs24 karla fw500 accent">{{
+        "skills.eyebrow" | translate
+      }}</span>
       <div class="content">
-        <h2 class="fira fs64 fw700 accent">{{ "skills.headline" | translate }}</h2>
+        <h2 class="fira fs64 fw700 accent">
+          {{ "skills.headline" | translate }}
+        </h2>
         <p>
           {{ "skills.description" | translate }}
         </p>
-        <h3 class="fira fw700 accent fs24">{{ "skills.headline2.part1" | translate }} <span class="main">{{ "skills.headline2.part2" | translate }}</span></h3>
+        <h3 class="fira fw700 accent fs24">
+          {{ "skills.headline2.part1" | translate }}
+          <span class="main">{{ "skills.headline2.part2" | translate }}</span>
+        </h3>
         <p>{{ "skills.paragraph" | translate }}</p>
-        <button>{{ "skills.button" | translate }}</button>
+        <a href="#contact">
+          <button>{{ "skills.button" | translate }}</button>
+        </a>
       </div>
     </div>
-  
+
     <div class="images">
       <div *ngFor="let skill of skillDb; let i = index" class="skill-wrapper">
         <div
@@ -27,7 +35,7 @@
           <img src="assets/vectors/bubble.svg" *ngIf="hover" class="test" />
           <!-- wie in Tooltip rein? -->
         </div>
-  
+
         <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
           <img [src]="skill.src" [alt]="skill.alt" />
           <p>{{ skill.name }}</p>
