@@ -35,9 +35,27 @@ footer {
         justify-content: flex-end;
       > nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         gap: 8px;
+        > a {
+            position: relative;
+            &:hover {
+              color: $accent;
+            }
+            &:hover::before {
+              content: "";
+              position: absolute;
+              left: -16px;
+              background: $accent;
+              width: 4px;
+              height: 4px;
+              border-radius: 100%;
+              top: 50%;
+              transform: translateY(-50%)
+            }
+          }
+        }
       }
-    }
+    
   }
 }

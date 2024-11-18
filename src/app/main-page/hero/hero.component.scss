@@ -86,7 +86,7 @@ section {
           color: $accent;
         }
       }
-      > a {
+      > .social {
         align-self: center;
         position: relative;
         &:hover::before {
@@ -124,7 +124,7 @@ section {
       align-items: center;
       > .carousel-item {
         width: 100%;
-        animation: scroll 120s linear infinite;
+        animation: scroll 120s linear infinite alternate;
       }
     }
   }

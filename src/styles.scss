@@ -105,6 +105,36 @@ button {
   }
 } 
 
+.button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  border-radius: 32px;
+  width: 200px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  >img {
+    height: 16px;
+    transform: rotate(315deg);
+    transition: transform 0.3s ease, height 0.3s ease-in-out;
+  }
+  &:hover{
+    border: 1px solid $accent;
+    color: $accent;
+    >img {
+      height: 18px;
+      transform: rotate(315deg) translate(2px, 2px);
+    }
+  } 
+} 
+
+
+
 /* Fonts */
 
 @font-face {

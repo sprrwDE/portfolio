@@ -2,9 +2,9 @@
 <div class="dialog-content">
   <div class="text-wrapper">
     <span class="accent carla fw700 fs128">{{ currentIndex + 1 }}</span>
-    <h2 class="main fira fw700 fs64">{{ project?.name || '' | translate}}</h2>
-    <h3 class="accent fira fw700 fs24">{{ 'projects.about' | translate }}</h3>
-    <p class="karla fs18">{{ project?.description || '' | translate }}</p>
+    <h2 class="main fira fw700 fs64">{{ project?.name || "" | translate }}</h2>
+    <h3 class="accent fira fw700 fs24">{{ "projects.about" | translate }}</h3>
+    <p class="karla fs18">{{ project?.description || "" | translate }}</p>
     <div class="skill-wrapper">
       <div class="skill-inner" *ngFor="let skill of project?.skillset">
         <img src="{{ skill.image }}" />
@@ -13,18 +13,31 @@
     </div>
     <div class="button-wrapper">
       <a href="{{ project?.urls?.github }}" target="_blank">
-        <button>Github</button>
+        <div class="button">
+          <span>Github</span>
+          <img src="assets/icons/misc/arrow_forward.svg" />
+        </div>
       </a>
       <a href="{{ project?.urls?.project }}" target="_blank">
-        <button>Live Test</button>
+        <div class="button">
+          <span>Live Test</span>
+          <img src="assets/icons/misc/arrow_forward.svg" />
+        </div>
       </a>
     </div>
   </div>
   <div class="image-wrapper">
-    <p (click)="onClose()">X</p>
-    <!-- hier icon -->
+    <div class="close-wrapper">
+      <img src="assets/icons/misc/close_small.svg" (click)="onClose()" class="close">
+    </div>
+
+
     <img src="{{ project?.image }}" />
-    <p class="next" (click)="nextDialog()">{{ 'projects.button' | translate}}</p>
-    <!-- hier icon -->
+    <div class="next" (click)="nextDialog()">
+      <div class="next-inner">
+      {{ "projects.button" | translate }}
+      <img src="assets/icons/misc/arrow_forward.svg">
+    </div>
+    </div>
   </div>
 </div>

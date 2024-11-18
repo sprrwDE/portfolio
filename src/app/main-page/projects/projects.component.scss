@@ -44,15 +44,18 @@
  
         >.description {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           width: 100%;
+          gap: 16px;
         }
         >.skills {
           display: flex; 
-          gap: 8px;
+          gap: 1px;
           align-items: center;
           flex-direction: row;
-        }
+          justify-content: flex-end;
+          gap: 8px;
+        } 
 
       }
 

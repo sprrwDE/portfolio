@@ -9,12 +9,12 @@ import { TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [RouterOutlet, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'portfolio';
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('de'); 
+    this.translate.setDefaultLang('de');
   }
 }

@@ -1,7 +1,9 @@
 <section class="container">
   <div class="content-outter">
     <span class="fs24 karla accent">Portfolio</span>
-    <h3 class="fs64 fira accent fw700">{{ "projects.headline" | translate }}</h3>
+    <h3 class="fs64 fira accent fw700">
+      {{ "projects.headline" | translate }}
+    </h3>
     <p>
       {{ "projects.paragraph" | translate }}
     </p>
@@ -16,20 +18,27 @@
         class="content"
         (mouseover)="hoverImg = project.name"
         (mouseout)="hoverImg = ''"
-        [ngClass]="{ 'first': index === 0 }"
+        [ngClass]="{ first: index === 0 }"
       >
         <div class="description">
           <h3 class="fira fs24 fw700 main">{{ project.name | translate }}</h3>
+          <img
+            *ngIf="hoverImg === project.name"
+            src="assets/icons/misc/arrow_outward.svg"
+            class="arrow"
+          />
         </div>
 
         <div class="skills">
-          <span *ngFor="let skill of project.skillset">{{ skill.name }}</span>
+          <div *ngFor="let skill of project.skillset; let i = index">
+            {{ skill.name }}
+          </div>
         </div>
       </div>
       <div class="image" *ngIf="hoverImg === project.name">
-        <div  alt="" class="{{ project.tag }}">
+        <div alt="" class="{{ project.tag }}">
           <img src="{{ project.image }}" />
-          <img class="capa" src="assets/capa2.svg"/>
+          <img class="capa" src="assets/capa2.svg" />
         </div>
       </div>
     </div>
