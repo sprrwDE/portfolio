@@ -1,11 +1,16 @@
 <section class="container testi">
   <h3 class="fira fw700 fs32 accent">{{ 'testimonials.headline' | translate }}</h3>
   <div class="outter">
-    <div *ngFor="let testimonial of testimonialDb" class="wrapper">
+    <div *ngFor="let testimonial of testimonialDb; let i = index" class="wrapper">
       <p>{{ testimonial.testimonial | translate }}</p>
       <div class="person">
         <div class="horizontal"></div>
         <p>{{ testimonial.name | translate }} - {{ testimonial.status | translate }}</p>
+        <!-- if index = 1 (mitte) klasse hinzufügen für mittiges testimonial
+         + highlight variable true setzen 
+         pfeil links: (i - -1) % testimonialDb.length 
+         pfeil rechts: (i + 1) % testimonialDb.length -->
+
       </div>
     </div>
   </div>

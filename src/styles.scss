@@ -48,6 +48,7 @@ html {
   background-color: $background;
   color: $main;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 body {
@@ -178,6 +179,9 @@ button {
 
 .fs64 {
   font-size: 64px;
+  @media screen and (max-width: 640px) {
+    font-size: 56px;
+  }
 }
 
 .fs32 {
