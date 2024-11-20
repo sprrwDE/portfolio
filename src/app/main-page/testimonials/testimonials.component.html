@@ -1,17 +1,30 @@
 <section class="container testi">
-  <h3 class="fira fw700 fs32 accent">{{ 'testimonials.headline' | translate }}</h3>
+  <h3 class="fira fw700 fs32 accent">
+    {{ "testimonials.headline" | translate }}
+  </h3>
   <div class="outter">
-    <div *ngFor="let testimonial of testimonialDb; let i = index" class="wrapper">
+    <div
+      *ngFor="let testimonial of testimonialDb; let i = index"
+      class="wrapper"
+      [ngClass]="{
+        'selected': i === currentIndex,
+        'prev': i === currentIndex - 1,
+        'next': i === currentIndex + 1,
+      }"
+    >
       <p>{{ testimonial.testimonial | translate }}</p>
       <div class="person">
         <div class="horizontal"></div>
-        <p>{{ testimonial.name | translate }} - {{ testimonial.status | translate }}</p>
-        <!-- if index = 1 (mitte) klasse hinzufügen für mittiges testimonial
-         + highlight variable true setzen 
-         pfeil links: (i - -1) % testimonialDb.length 
-         pfeil rechts: (i + 1) % testimonialDb.length -->
+        <p>
+          {{ testimonial.name | translate }} -
+          {{ testimonial.status | translate }}
+        </p>
 
       </div>
     </div>
+  </div>
+  <div class="pagination">
+    <img (click)="previousSlide()" src="assets/icons/arrow_back.svg" />
+    <img (click)="nextSlide()" src="assets/icons/arrow_forward.svg" />
   </div>
 </section>

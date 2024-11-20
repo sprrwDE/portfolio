@@ -12,8 +12,19 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class TestimonialsComponent {
   testimonialDb:Testimonial[] = [];
+  currentIndex:number = 1;
   constructor(private testimonialService: TestimonialsService) {
     this.testimonialDb = this.testimonialService.getTestimonials()
     console.log(this.testimonialDb)
+  }
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.testimonialDb.length
+    console.log(this.currentIndex)
+  }
+
+  previousSlide() {
+    this.currentIndex = (this.currentIndex - 1) % this.testimonialDb.length
+    console.log(this.currentIndex)
   }
 }

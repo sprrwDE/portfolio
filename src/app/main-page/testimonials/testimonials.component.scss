@@ -30,8 +30,18 @@
                     width: 100%;
                     flex: 1;
                 }
-            }
-            
+            }     
         }
+        >.selected{
+            background-color: red;
+        }
+
+    }
+    >.pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
     }
 }
