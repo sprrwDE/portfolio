@@ -27,6 +27,11 @@
     flex-direction: row;
     gap: 24px;
     padding: 40px;
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
     >.text-wrapper{
       width: 100%;
       display: flex;
@@ -64,6 +69,7 @@
         display: flex; 
         justify-content: center;
         align-items: center;
+ 
         &:hover{
           background-color: $primary;
         }

@@ -24,7 +24,7 @@ export class TestimonialsComponent {
   }
 
   previousSlide() {
-    this.currentIndex = (this.currentIndex - 1) % this.testimonialDb.length
+    this.currentIndex = (this.currentIndex - 1 + this.testimonialDb.length) % this.testimonialDb.length
     console.log(this.currentIndex)
   }
 }
