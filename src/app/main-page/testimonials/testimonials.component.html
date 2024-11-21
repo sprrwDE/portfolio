@@ -9,6 +9,9 @@
       class="wrapper"
       [ngClass]="{
         'selected': i === selectedItem,
+        'prev': i === selectedItem - 1,
+        'next': i === selectedItem + 1,
+
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>

@@ -22,7 +22,6 @@ export class TestimonialsComponent {
   }
 
   nextSlide() {
-    // this.currentIndex = (this.currentIndex + 1) % this.testimonialDb.length;
     let lastElement = this.testimonialDb.pop(); 
     if (lastElement) { 
       this.testimonialDb.unshift(lastElement); 
@@ -30,10 +29,6 @@ export class TestimonialsComponent {
   }
 
   previousSlide() {
-/*     this.currentIndex =
-      (this.currentIndex - 1 + this.testimonialDb.length) %
-      this.testimonialDb.length;
-    console.log(this.currentIndex); */
     let firstElement = this.testimonialDb.shift(); 
     if(firstElement) {
       this.testimonialDb.push(firstElement);} 
