@@ -2,14 +2,13 @@
   <h3 class="fira fw700 fs32 accent">
     {{ "testimonials.headline" | translate }}
   </h3>
+  <img src="assets/quotes.svg" class="quote">
   <div class="outter">
     <div
       *ngFor="let testimonial of testimonialDb; let i = index"
       class="wrapper"
       [ngClass]="{
-        'selected': i === currentIndex,
-        'prev': i === currentIndex - 1,
-        'next': i === currentIndex + 1,
+        'selected': i === selectedItem,
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>

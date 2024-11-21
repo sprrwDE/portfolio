@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    position: relative;
     >.outter {
         width: 100%;
         display: flex;
@@ -36,6 +37,11 @@
             background-color: red;
         }
 
+    }
+    .quote{
+        position: absolute;
+        top:30%;
+        left: 32%;
     }
     >.pagination{
         display: flex;
