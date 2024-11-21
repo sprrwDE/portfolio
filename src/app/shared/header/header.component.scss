@@ -26,6 +26,9 @@ header {
         display: flex;
         align-items: center;
         gap: 16px;
+        @media screen and (max-width: $tab) {
+          display: none!important;
+        }
         > a {
           position: relative;
           &:hover {

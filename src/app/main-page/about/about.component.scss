@@ -6,8 +6,8 @@ section {
   justify-content: space-between;
   padding: 160px 0;
   gap: 120px;
-  @media screen and (max-width: 640px) {
-    flex-direction: column;
+  @media screen and (max-width: $tab) {
+    flex-direction: column!important;
     gap: 0px;
   }
   .img-wrapper {
@@ -24,8 +24,8 @@ section {
       object-position: center;
       position: relative;
       z-index: 2;
-      @media screen and (max-width: 640px) {
-        height: 100%;
+      @media screen and (max-width: $tab) {
+        height: 100%!important;
       }
     }
 
@@ -51,8 +51,8 @@ section {
     gap: 16px;
     > span {
       margin-top: 80px;
-      @media screen and (max-width: 640px) {
-        margin-top: 24px;
+      @media screen and (max-width: $tab) {
+        margin-top: 24px!important;
 
       }
     }

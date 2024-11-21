@@ -48,7 +48,7 @@ html {
   background-color: $background;
   color: $main;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 body {
@@ -175,17 +175,31 @@ button {
 
 .fs128 {
   font-size: 128px;
+  @media screen and (max-width: $tab) {
+    font-size: 62px!important;
+  }
 }
 
 .fs64 {
   font-size: 64px;
-  @media screen and (max-width: 640px) {
-    font-size: 56px;
+  @media screen and (max-width: $tab) {
+    font-size: 56px!important;;
+  }
+}
+
+
+.fs40 {
+  font-size: 40px;
+  @media screen and (max-width: $tab) {
+    font-size: 24px!important;;
   }
 }
 
 .fs32 {
   font-size: 32px;
+  @media screen and (max-width: $tab) {
+    font-size: 24px!important;;
+  }
 }
 
 .fs24 {

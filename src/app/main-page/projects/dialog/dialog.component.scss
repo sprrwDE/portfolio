@@ -27,7 +27,7 @@
     flex-direction: row;
     gap: 24px;
     padding: 40px;
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: $tab) {
       flex-direction: column;
       width: 100%;
     }
