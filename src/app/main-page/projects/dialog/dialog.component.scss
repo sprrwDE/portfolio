@@ -57,7 +57,7 @@
         align-items: center;
         gap: 24px;
         margin: 40px 40px 0 0;
-      } >.button {
+      } .button-dial {
         border: 1px solid white;
         background-color: transparent;
         color: white;
@@ -66,14 +66,24 @@
         width: 200px;
         cursor: pointer;
         overflow: hidden;
-        display: flex; 
-        justify-content: center;
+        display: flex;
         align-items: center;
- 
-        &:hover{
-          background-color: $primary;
+        justify-content: center;
+        gap: 8px;
+        > img {
+          height: 16px;
+          transform: rotate(315deg);
+          transition: transform 0.3s ease, height 0.3s ease-in-out;
         }
-      } 
+        &:hover {
+          border: 1px solid $accent;
+          color: $accent;
+          > img {
+            height: 18px;
+            transform: rotate(315deg) translate(2px, 2px);
+          }
+        }
+      }
     }
     >.image-wrapper{
       display: flex;

@@ -4,7 +4,7 @@ $primary: #08463b;
 $main: #ffffff;
 $accent: #3dcfb6;
 $background: #1c1c1c;
-$gray: #FFFFFFCC;
+$gray: #ffffffcc;
 
 .primary {
   color: $primary;
@@ -48,7 +48,7 @@ html {
   background-color: $background;
   color: $main;
   font-weight: 400;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -68,7 +68,7 @@ main {
   width: 100%;
   max-width: 1440px;
   @media screen and (max-width: $laptop) {
-    padding: 80px 2%!important;
+    padding: 80px 2% !important;
   }
 }
 
@@ -101,16 +101,16 @@ button {
   width: 200px;
   cursor: pointer;
   overflow: hidden;
-  &:hover{
+  &:hover {
     background-color: $primary;
   }
-} 
+}
 
 .button {
   border: 1px solid white;
   background-color: transparent;
   color: white;
-  padding: 16px;
+  padding: 24px;
   border-radius: 32px;
   width: 200px;
   cursor: pointer;
@@ -119,22 +119,47 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  >img {
+  position: relative;
+
+  > img {
     height: 16px;
     transform: rotate(315deg);
     transition: transform 0.3s ease, height 0.3s ease-in-out;
   }
-  &:hover{
+
+  &:hover {
     border: 1px solid $accent;
     color: $accent;
-    >img {
+
+    > img {
       height: 18px;
       transform: rotate(315deg) translate(2px, 2px);
     }
-  } 
-} 
 
+    .button-text.first {
+      transform: translateX(-200%); 
+    }
 
+    .button-text.last {
+      transform: translateX(0); 
+    }
+  }
+}
+
+.button-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.5s ease-out;
+
+  &.first {
+    transform: translateX(0); 
+  }
+
+  &.last {
+    transform: translateX(200%); 
+  }
+}
 
 /* Fonts */
 
@@ -176,29 +201,28 @@ button {
 .fs128 {
   font-size: 128px;
   @media screen and (max-width: $tab) {
-    font-size: 62px!important;
+    font-size: 62px !important;
   }
 }
 
 .fs64 {
   font-size: 64px;
   @media screen and (max-width: $tab) {
-    font-size: 56px!important;;
+    font-size: 56px !important;
   }
 }
-
 
 .fs40 {
   font-size: 40px;
   @media screen and (max-width: $tab) {
-    font-size: 24px!important;;
+    font-size: 24px !important;
   }
 }
 
 .fs32 {
   font-size: 32px;
   @media screen and (max-width: $tab) {
-    font-size: 24px!important;;
+    font-size: 24px !important;
   }
 }
 
