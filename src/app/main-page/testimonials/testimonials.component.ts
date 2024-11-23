@@ -16,12 +16,14 @@ import { TranslateModule } from '@ngx-translate/core';
 export class TestimonialsComponent {
   testimonialDb: Testimonial[] = [];
   selectedItem: number = 1;
+  selectedPage: number = 1;
   constructor(private testimonialService: TestimonialsService) {
     this.testimonialDb = this.testimonialService.getTestimonials();
     console.log(this.testimonialDb);
   }
 
   nextSlide() {
+    this.selectedPage = (this.selectedPage + 1) % this.testimonialDb.length
     let lastElement = this.testimonialDb.pop(); 
     if (lastElement) { 
       this.testimonialDb.unshift(lastElement); 
@@ -29,6 +31,7 @@ export class TestimonialsComponent {
   }
 
   previousSlide() {
+    this.selectedPage = (this.selectedPage - 1 + this.testimonialDb.length) % this.testimonialDb.length
     let firstElement = this.testimonialDb.shift(); 
     if(firstElement) {
       this.testimonialDb.push(firstElement);} 

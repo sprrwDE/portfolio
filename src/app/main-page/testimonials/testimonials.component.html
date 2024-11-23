@@ -2,7 +2,7 @@
   <h3 class="fira fw700 fs32 accent">
     {{ "testimonials.headline" | translate }}
   </h3>
-  <img src="assets/quotes.svg" class="quote">
+  <img src="assets/quotes.svg" class="quote" />
   <div class="outter">
     <div
       *ngFor="let testimonial of testimonialDb; let i = index"
@@ -11,7 +11,6 @@
         'selected': i === selectedItem,
         'prev': i === selectedItem - 1,
         'next': i === selectedItem + 1,
-
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>
@@ -21,12 +20,21 @@
           {{ testimonial.name | translate }} -
           {{ testimonial.status | translate }}
         </p>
-
       </div>
     </div>
   </div>
+
   <div class="pagination">
     <img (click)="previousSlide()" src="assets/icons/arrow_back.svg" />
+    <div
+      *ngFor="let dot of testimonialDb; let i = index"
+      class="dot"
+      [ngClass]="{
+        'inactive': i !== selectedPage,
+        'active': i === selectedPage
+      }"
+    ></div>
     <img (click)="nextSlide()" src="assets/icons/arrow_forward.svg" />
   </div>
+
 </section>
