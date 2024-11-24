@@ -20,6 +20,9 @@
       padding: 30px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      font-size: 18px;
+
 
       > .person {
         display: flex;
@@ -38,6 +41,7 @@
       border: 1px solid #3dcfb6;
       background-color: #3dcfb64d;
       width: 150%;
+      height: 240px;
     }
 
     > .prev {
