@@ -1,5 +1,5 @@
 <header>
-  <div class="container">
+  <div class="container desktop">
     <div class="navbar">
       <div class="lang">
         <ng-toggle
@@ -48,5 +48,9 @@
     </div>
 
     <a href="#"> <img src="assets/sparrow_logo.svg" /></a>
+  </div>
+  <div class="container mobile">
+    <a class="img-mob" href="#"> <img src="assets/sparrow_logo.svg" /></a>
+    <img (click)="openHamburger()" class="ham" src="/assets/icons/menu.svg" />
   </div>
 </header>
