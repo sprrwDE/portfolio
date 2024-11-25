@@ -79,14 +79,14 @@ header {
 }
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.503);
   z-index: 999;
-  >.dropdown{
+  >.dropdown {
     position: absolute;
     background: linear-gradient(45deg, $background 50%, $primary);
     width: 40%;
@@ -114,4 +114,5 @@ header {
       width: auto;
     }
   }
+  
 }

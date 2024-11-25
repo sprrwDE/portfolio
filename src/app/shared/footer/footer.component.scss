@@ -4,7 +4,7 @@ footer {
   height: 200px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: auto;
     flex-direction: column;
   }
@@ -31,7 +31,7 @@ footer {
       align-items: center;
       gap: 8px;
       width: 33%;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         display: none;
       }
     }
@@ -67,7 +67,7 @@ footer {
   > .mobile {
     display: none;
     padding-bottom: 24px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       display: block;
     }
   }

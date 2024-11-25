@@ -57,52 +57,54 @@
 
 <div class="backdrop" (click)="closeHamburger()" *ngIf="hamburgerOpen">
   <div class="dropdown" (click)="$event.stopPropagation()">
-
     <nav>
-      <a class="main fs16 fira" href="#about">{{'header.about' | translate}}</a>
-      <a class="main fs16 fira" href="#skills">{{'header.skills' | translate}}</a>
-      <a class="main fs16 fira" href="#projects">{{'header.projects' | translate}}</a>
+      <a (click)="closeHamburger()" class="main fs16 fira" href="#about">{{ "header.about" | translate }}</a>
+      <a (click)="closeHamburger()" class="main fs16 fira" href="#skills">{{
+        "header.skills" | translate
+      }}</a>
+      <a (click)="closeHamburger()" class="main fs16 fira" href="#projects">{{
+        "header.projects" | translate
+      }}</a>
     </nav>
-
+  
     <div class="lang">
       <ng-toggle
-      [value]="currentLang === 'EN' ? 1 : 0"
-      [disabled]="false"
-      [width]="60"
-      [height]="30"
-      [margin]="4"
-      [fontSize]="14"
-      [labels]="{
-        'unchecked': 'DE',
-        'checked': 'EN'
-      }"
-      [color]="{
-        'unchecked': 'transparent',
-        'checked': 'transparent',
-        'disabled': 'transparent'
-      }"
-      [switchColor]="{
-        'checked': '#3dcfb6',
-        'unchecked': '#3dcfb6',
-        'disabled': '#c0c0c0'
-      }"
-      [values]="{
-        'unchecked': 0,
-        'checked': 1
-      }"
-      [textAlign]="{
-        'checked': 'left',
-        'unchecked': 'right'
-      }"
-      [fontColor]="{
-        'checked': '#ffffff',
-        'unchecked': '#ffffff',
-        'disabled': '#ffffff'
-      }"
-      (valueChange)="toggleLanguage($event)"
-    ></ng-toggle>
-    
+        [value]="currentLang === 'EN' ? 1 : 0"
+        [disabled]="false"
+        [width]="60"
+        [height]="30"
+        [margin]="4"
+        [fontSize]="14"
+        [labels]="{
+          unchecked: 'DE',
+          checked: 'EN'
+        }"
+        [color]="{
+          unchecked: 'transparent',
+          checked: 'transparent',
+          disabled: 'transparent'
+        }"
+        [switchColor]="{
+          checked: '#3dcfb6',
+          unchecked: '#3dcfb6',
+          disabled: '#c0c0c0'
+        }"
+        [values]="{
+          unchecked: 0,
+          checked: 1
+        }"
+        [textAlign]="{
+          checked: 'left',
+          unchecked: 'right'
+        }"
+        [fontColor]="{
+          checked: '#ffffff',
+          unchecked: '#ffffff',
+          disabled: '#ffffff'
+        }"
+        (valueChange)="toggleLanguage($event)"
+      ></ng-toggle>
     </div>
-
   </div>
+  
 </div>
