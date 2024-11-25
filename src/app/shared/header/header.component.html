@@ -58,6 +58,12 @@
 <div class="backdrop" (click)="closeHamburger()" *ngIf="hamburgerOpen">
   <div class="dropdown" (click)="$event.stopPropagation()">
 
+    <nav>
+      <a class="main fs16 fira" href="#about">{{'header.about' | translate}}</a>
+      <a class="main fs16 fira" href="#skills">{{'header.skills' | translate}}</a>
+      <a class="main fs16 fira" href="#projects">{{'header.projects' | translate}}</a>
+    </nav>
+
     <div class="lang">
       <ng-toggle
       [value]="currentLang === 'EN' ? 1 : 0"
