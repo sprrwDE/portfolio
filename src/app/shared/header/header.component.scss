@@ -68,6 +68,32 @@ header {
     }
     >.ham {
       width: 32px;
+      position: relative;
     }
+
+    >.dialog {
+      background-color: white;
+      width: 200px;
+    }
+  }
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.503);
+  z-index: 999;
+  >.dropdown{
+    position: absolute;
+    background-color: green;
+    width: 40%;
+    right: 2%;
+    top: 10%;
+    padding: 10px;
+    border: 1px solid $accent;
+    border-radius: 15px;
   }
 }
