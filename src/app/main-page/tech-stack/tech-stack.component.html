@@ -37,8 +37,7 @@
         >
           <img [src]="skill.src" [alt]="skill.alt" />
           <p>{{ skill.name }}</p>
-          <img src="assets/vectors/bubble.svg" *ngIf="hover" class="test" />
-          <!-- wie in Tooltip rein? -->
+          <app-tooltip *ngIf="hover" class="test" ></app-tooltip>
         </div>
 
         <div class="inner-wrapper" *ngIf="i !== skillDb.length - 1">
