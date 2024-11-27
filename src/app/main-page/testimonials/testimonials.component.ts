@@ -27,7 +27,7 @@ export class TestimonialsComponent {
     let lastElement = this.testimonialDb.pop(); 
     if (lastElement) { 
       this.testimonialDb.unshift(lastElement); 
-    }
+    } 
   }
 
   previousSlide() {

@@ -6,14 +6,15 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  position: relative;
   > .outter {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 32px;
+    gap: 40px;
     overflow-x: hidden;
+    overflow-y: visible;
+    padding: 32px 0;
     > .wrapper {
       width: 100%;
       border-radius: 20px;
@@ -42,6 +43,11 @@
       background-color: #3dcfb64d;
       width: 150%;
       height: 240px;
+      position: relative;
+    }
+
+    @keyframes scroll {
+      
     }
 
     > .prev {
@@ -58,8 +64,9 @@
 
     .quote {
       position: absolute;
-      top: 30%;
-      left: 32%;
+      top: -13%;
+      left: -10%;
+      z-index: 99;
     }
   }
 

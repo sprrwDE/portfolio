@@ -1,58 +1,62 @@
 <div class="container section-wrapper">
   <div class="content">
-    <span class="karla fs24 accent">{{'contact.eyebrow' | translate}}</span>
-    <h2 class="fira fs64 accent fw700">{{'contact.headline' | translate}}</h2>
-    <h3 class="fira fs24 accent fw700">{{'contact.solve' | translate}}</h3>
+    <span class="karla fs24 accent">{{ "contact.eyebrow" | translate }}</span>
+    <h2 class="fira fs64 accent fw700">{{ "contact.headline" | translate }}</h2>
+    <h3 class="fira fs24 accent fw700">{{ "contact.solve" | translate }}</h3>
     <p>
-      {{'contact.paragraph' | translate}}
+      {{ "contact.paragraph" | translate }}
     </p>
     <p>
-      {{'contact.paragraph2' | translate}} <span class="accent">{{ "contact.span" | translate }}</span>
+      {{ "contact.paragraph2" | translate }}
+      <span class="accent">{{ "contact.span" | translate }}</span>
     </p>
-    
-
   </div>
 
   <div class="form-wrapper">
-
     <form (ngSubmit)="onSubmit(formRef)" #formRef="ngForm">
       <div class="seperator"></div>
 
-      <label class="accent fira fs24 plr24" for="name">{{'contact.form.name.label' | translate}}</label>
+      <label class="accent fira fs24 plr24" for="name">{{
+        "contact.form.name.label" | translate
+      }}</label>
       <input
         #name="ngModel"
         minlength="4"
         [(ngModel)]="contactData.name"
-        type="text" 
+        type="text"
         id="fname"
         name="firstname"
-        placeholder="{{'contact.form.name.placeholder' | translate}}"
+        placeholder="{{ 'contact.form.name.placeholder' | translate }}"
         class="fira plr24"
         required
       />
       @if (!name.valid && name.touched && !name.disabled) {
-      <div class="error">{{'contact.form.name.error' | translate}}</div>
+      <div class="error">{{ "contact.form.name.error" | translate }}</div>
       }
       <div class="seperator"></div>
 
-      <label class="accent fira fs24 plr24" for="email">{{'contact.form.email.label' | translate}}</label>
+      <label class="accent fira fs24 plr24" for="email">{{
+        "contact.form.email.label" | translate
+      }}</label>
       <input
         #email="ngModel"
         [(ngModel)]="contactData.email"
         type="email"
         id="email"
         name="email"
-        placeholder="{{'contact.form.email.placeholder' | translate}}"
+        placeholder="{{ 'contact.form.email.placeholder' | translate }}"
         required
         class="fira plr24"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
       @if (!email.valid && email.touched && !email.disabled) {
-      <div class="error">{{'contact.form.email.error' | translate}}</div>
+      <div class="error">{{ "contact.form.email.error" | translate }}</div>
       }
       <div class="seperator"></div>
 
-      <label class="accent fira fs24 plr24" for="subject">{{'contact.form.subject.label' | translate}}</label>
+      <label class="accent fira fs24 plr24" for="subject">{{
+        "contact.form.subject.label" | translate
+      }}</label>
       <textarea
         #message="ngModel"
         minlength="1"
@@ -61,14 +65,14 @@
         class="fira plr24"
         name="subject"
         required
-        placeholder="{{'contact.form.subject.placeholder' | translate}}"
+        placeholder="{{ 'contact.form.subject.placeholder' | translate }}"
       ></textarea>
       @if (!message.valid && message.touched && !message.disabled) {
-      <div class="error">{{'contact.form.subject.error' | translate}}</div>
+      <div class="error">{{ "contact.form.subject.error" | translate }}</div>
       }
       <div class="seperator"></div>
 
-      <label for="terms" class="w100  fira plr24">
+      <label for="terms" class="w100 fira plr24">
         <input
           #terms="ngModel"
           [(ngModel)]="contactData.terms"
@@ -77,13 +81,19 @@
           name="terms"
           required
         />
-        {{'contact.form.terms.placeholder.part1' | translate}} <a href="/data-protection/">{{'contact.form.terms.placeholder.a' | translate}}</a> {{'contact.form.terms.placeholder.part2' | translate}}
+        {{ "contact.form.terms.placeholder.part1" | translate }}
+        <a href="/data-protection/">{{
+          "contact.form.terms.placeholder.a" | translate
+        }}</a>
+        {{ "contact.form.terms.placeholder.part2" | translate }}
       </label>
       <div *ngIf="!terms.valid && terms.touched" class="error">
-        {{'contact.form.terms.error' | translate}}
+        {{ "contact.form.terms.error" | translate }}
       </div>
 
-      <button type="submit">{{'contact.form.submit' | translate}}</button>
+      <button type="submit" [disabled]="!formRef.valid || formRef.pristine">
+        {{ "contact.form.submit" | translate }}
+      </button>
     </form>
   </div>
 </div>

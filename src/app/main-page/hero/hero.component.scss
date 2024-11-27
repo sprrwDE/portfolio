@@ -124,7 +124,7 @@ section {
       align-items: center;
       > .carousel-item {
         width: 100%;
-        animation: scroll 120s linear infinite alternate;
+        animation: scroll 120s linear infinite;
       }
     }
   }
@@ -132,10 +132,10 @@ section {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%); 
   }
   100% {
-    transform: translateX(calc(100% * 9));
+    transform: translateX(-100%); 
   }
 }
 

@@ -2,7 +2,6 @@
   <h3 class="fira fw700 fs32 accent">
     {{ "testimonials.headline" | translate }}
   </h3>
-  <img src="assets/quotes.svg" class="quote" />
   <div class="outter">
     <div
       *ngFor="let testimonial of testimonialDb; let i = index"
@@ -21,6 +20,7 @@
           {{ testimonial.status | translate }}
         </p>
       </div>
+      <img *ngIf="i === 1" src="assets/quotes.svg" class="quote" />
     </div>
   </div>
 
@@ -30,11 +30,10 @@
       *ngFor="let dot of testimonialDb; let i = index"
       class="dot"
       [ngClass]="{
-        'inactive': i !== selectedPage,
-        'active': i === selectedPage
+        inactive: i !== selectedPage,
+        active: i === selectedPage
       }"
     ></div>
     <img (click)="nextSlide()" src="assets/icons/arrow_forward.svg" />
   </div>
-
 </section>
