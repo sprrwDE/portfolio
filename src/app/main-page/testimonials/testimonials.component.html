@@ -10,6 +10,8 @@
         'selected': i === selectedItem,
         'prev': i === selectedItem - 1,
         'next': i === selectedItem + 1,
+        'to-right': animateRight === true,
+        'to-left': animateLeft === true,
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>
