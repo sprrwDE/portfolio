@@ -26,10 +26,10 @@ export class TestimonialsComponent {
   }
 
   nextSlide() {
-    this.selectNext();
     this.animateRight = true;
     // console.log(this.animateRight);
     setTimeout(() => {
+      this.selectNext();
       this.animateRight = false;
       // console.log(this.animateRight);
     }, 1000);

@@ -54,6 +54,10 @@
       animation: slideLeft 0.5s ease-in-out forwards;
     }
 
+    >.test {
+      background-color: red!important;
+    }
+
     @keyframes slideRight {
       0% {
         transform: translateX(0%);
