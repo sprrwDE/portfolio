@@ -11,7 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.scss',
+  styleUrls: ['./testimonials.component.scss'],
 })
 export class TestimonialsComponent {
   testimonialDb: Testimonial[] = [];
@@ -22,42 +22,41 @@ export class TestimonialsComponent {
 
   constructor(private testimonialService: TestimonialsService) {
     this.testimonialDb = this.testimonialService.getTestimonials();
-    console.log(this.testimonialDb);
   }
 
   nextSlide() {
     this.animateRight = true;
-    // console.log(this.animateRight);
+    this.animateLeft = false;
     setTimeout(() => {
-      this.selectNext();
       this.animateRight = false;
-      // console.log(this.animateRight);
-    }, 1000);
-  }
-
-  selectNext() {
-    this.selectedPage = (this.selectedPage + 1) % this.testimonialDb.length;
-    let lastElement = this.testimonialDb.pop();
-    if (lastElement) {
-      this.testimonialDb.unshift(lastElement);
-    }
+      this.selectNext();
+    }, 500); 
   }
 
   previousSlide() {
-    this.selectPrev()
     this.animateLeft = true;
-    // console.log(this.animateLeft);
+    this.animateRight = false;
     setTimeout(() => {
       this.animateLeft = false;
-      // console.log(this.animateLeft);
-    }, 1000);
+      this.selectPrev();
+    }, 500); 
+  }
+
+  selectNext() {
+    const lastElement = this.testimonialDb.pop();
+    if (lastElement) {
+      this.testimonialDb.unshift(lastElement);
+    }
+    this.selectedPage = (this.selectedPage + 1) % this.testimonialDb.length;
   }
 
   selectPrev() {
-    this.selectedPage = (this.selectedPage - 1 + this.testimonialDb.length) % this.testimonialDb.length;
-    let firstElement = this.testimonialDb.shift();
+    const firstElement = this.testimonialDb.shift();
     if (firstElement) {
       this.testimonialDb.push(firstElement);
     }
+    this.selectedPage =
+      (this.selectedPage - 1 + this.testimonialDb.length) %
+      this.testimonialDb.length;
   }
 }

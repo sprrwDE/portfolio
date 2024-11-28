@@ -26,7 +26,19 @@ export class TestimonialsService {
     name: 'testimonials.t3.name',
     testimonial: 'testimonials.t3.text',
     status: 'testimonials.t3.status'
-  }]
+  },{
+    name: 'testimonials.t1.name',
+    testimonial: 'testimonials.t1.text',
+    status: 'testimonials.t1.status'
+  },{
+    name: 'testimonials.t2.name',
+    testimonial: 'testimonials.t2.text',
+    status: 'testimonials.t2.status'
+  },{
+    name: 'testimonials.t3.name',
+    testimonial: 'testimonials.t3.text',
+    status: 'testimonials.t3.status'
+  },]
 
   getTestimonials() {
     return this.testimonialDb;

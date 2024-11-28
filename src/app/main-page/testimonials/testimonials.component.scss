@@ -1,11 +1,10 @@
-@import "./../../../styles.scss";
-
 .testi {
   padding: 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+
   > .outter {
     width: 100%;
     display: flex;
@@ -15,6 +14,7 @@
     overflow-x: hidden;
     overflow-y: visible;
     padding: 32px 0;
+
     > .wrapper {
       width: 100%;
       border-radius: 20px;
@@ -24,11 +24,11 @@
       justify-content: space-between;
       font-size: 18px;
 
-
       > .person {
         display: flex;
         align-items: center;
         gap: 8px;
+
         > .horizontal {
           height: 1px;
           background-color: white;
@@ -37,7 +37,8 @@
         }
       }
     }
-    > .selected {
+
+    .selected {
       transform: scale(1);
       border: 1px solid #3dcfb6;
       background-color: #3dcfb64d;
@@ -46,23 +47,30 @@
       position: relative;
     }
 
-    >.to-right {
+    .prev {
+      background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
+      transform: translateX(-10%) scale(0.9);
+      border: 1px solid #3dcfb6;
+    }
+
+    .next {
+      background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
+      transform: translateX(10%) scale(0.9);
+      border: 1px solid #3dcfb6;
+    }
+
+    .to-right {
       animation: slideRight 0.5s ease-in-out forwards;
     }
 
-    >.to-left {
+    .to-left {
       animation: slideLeft 0.5s ease-in-out forwards;
-    }
-
-    >.test {
-      background-color: red!important;
     }
 
     @keyframes slideRight {
       0% {
         transform: translateX(0%);
       }
-    
       100% {
         transform: translateX(100%);
       }
@@ -72,23 +80,9 @@
       0% {
         transform: translateX(0%);
       }
-    
       100% {
         transform: translateX(-100%);
       }
-    }
-    
-
-    > .prev {
-      background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
-      transform: translateX(-10%) scale(0.9);
-      border: 1px solid #3dcfb6;
-    }
-
-    > .next {
-      background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
-      transform: translateX(10%) scale(0.9);
-      border: 1px solid #3dcfb6;
     }
 
     .quote {
@@ -105,23 +99,23 @@
     align-items: center;
     gap: 16px;
 
-
     > .dot {
       background-color: white;
       height: 8px;
       width: 8px;
       border-radius: 50%;
       display: flex;
+
       &.active {
-        background-color: #3DCFB6;
+        background-color: #3dcfb6;
         transform: scale(1.2);
       }
 
       &.inactive {
         opacity: 0.5;
       }
-
     }
+
     > img {
       cursor: pointer;
     }
