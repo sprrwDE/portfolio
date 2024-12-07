@@ -23,6 +23,7 @@
     "@ngx-translate/http-loader": "^16.0.0",
     "ng-toggle-button": "^1.5.3",
     "rxjs": "~7.8.0",
+    "swiper": "^11.1.15",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },

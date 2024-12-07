@@ -1,3 +1,6 @@
+@import "./../../../../node_modules/swiper/swiper-bundle.css";
+
+
 .testi {
   padding: 120px 0;
   display: flex;
@@ -10,9 +13,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 300px;
     gap: 40px;
     overflow-x: hidden;
-    overflow-y: visible;
     padding: 32px 0;
 
     > .wrapper {
@@ -23,6 +26,7 @@
       flex-direction: column;
       justify-content: space-between;
       font-size: 18px;
+      transition: all 1s ease;
 
       > .person {
         display: flex;
@@ -43,46 +47,24 @@
       border: 1px solid #3dcfb6;
       background-color: #3dcfb64d;
       width: 150%;
-      height: 240px;
+      // height: 240px;
       position: relative;
+
     }
 
     .prev {
       background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
       transform: translateX(-10%) scale(0.9);
       border: 1px solid #3dcfb6;
+
     }
 
     .next {
       background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
       transform: translateX(10%) scale(0.9);
       border: 1px solid #3dcfb6;
-    }
+      overflow: hidden;
 
-    .to-right {
-      animation: slideRight 0.5s ease-in-out forwards;
-    }
-
-    .to-left {
-      animation: slideLeft 0.5s ease-in-out forwards;
-    }
-
-    @keyframes slideRight {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(100%);
-      }
-    }
-
-    @keyframes slideLeft {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
     }
 
     .quote {
@@ -120,4 +102,4 @@
       cursor: pointer;
     }
   }
-}
+} 

@@ -24,23 +24,23 @@ export class TestimonialsComponent {
     this.testimonialDb = this.testimonialService.getTestimonials();
   }
 
-  nextSlide() {
+/*   nextSlide() {
     this.animateRight = true;
     this.animateLeft = false;
     setTimeout(() => {
       this.animateRight = false;
       this.selectNext();
-    }, 500); 
-  }
+    }, 1); 
+  } */
 
-  previousSlide() {
+/*   previousSlide() {
     this.animateLeft = true;
     this.animateRight = false;
     setTimeout(() => {
       this.animateLeft = false;
       this.selectPrev();
-    }, 500); 
-  }
+    }, 1000); 
+  } */
 
   selectNext() {
     const lastElement = this.testimonialDb.pop();
