@@ -9,12 +9,9 @@
       class="wrapper"
       [ngClass]="{
         selected: i === selectedItem,
-        prev:
-          i === selectedItem - 1 ||
-          (selectedItem === 0 && i === testimonialDb.length - 1),
-        next:
-          i === selectedItem + 1 ||
-          (selectedItem === testimonialDb.length - 1 && i === 0),
+        prev: i === selectedItem - 1,
+        next: i === selectedItem + 1,
+        hidden: i > selectedItem + 1 || i < selectedItem - 1
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>
@@ -41,5 +38,4 @@
     ></div>
     <img (click)="selectNext()" src="assets/icons/arrow_forward.svg" />
   </div>
-
 </section>

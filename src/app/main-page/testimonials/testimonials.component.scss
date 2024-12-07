@@ -13,13 +13,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 300px;
     gap: 40px;
     overflow-x: hidden;
     padding: 32px 0;
+    position: relative;
 
     > .wrapper {
-      width: 100%;
+      position: absolute;
+      top: 0;
+      width: 500px;
       border-radius: 20px;
       padding: 30px;
       display: flex;
@@ -27,6 +29,8 @@
       justify-content: space-between;
       font-size: 18px;
       transition: all 1s ease;
+      height: 300px;
+
 
       > .person {
         display: flex;
@@ -46,9 +50,8 @@
       transform: scale(1);
       border: 1px solid #3dcfb6;
       background-color: #3dcfb64d;
-      width: 150%;
-      // height: 240px;
       position: relative;
+      left: calc(50% - 250px);
 
     }
 
@@ -56,7 +59,7 @@
       background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
       transform: translateX(-10%) scale(0.9);
       border: 1px solid #3dcfb6;
-
+      left: -5%;
     }
 
     .next {
@@ -64,6 +67,10 @@
       transform: translateX(10%) scale(0.9);
       border: 1px solid #3dcfb6;
       overflow: hidden;
+      left: calc(50% + 250px);
+    }
+
+    .ghost {
 
     }
 

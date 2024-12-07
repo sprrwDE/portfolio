@@ -17,30 +17,10 @@ export class TestimonialsComponent {
   testimonialDb: Testimonial[] = [];
   selectedItem: number = 1;
   selectedPage: number = 1;
-  animateRight: boolean = false;
-  animateLeft: boolean = false;
 
   constructor(private testimonialService: TestimonialsService) {
     this.testimonialDb = this.testimonialService.getTestimonials();
   }
-
-/*   nextSlide() {
-    this.animateRight = true;
-    this.animateLeft = false;
-    setTimeout(() => {
-      this.animateRight = false;
-      this.selectNext();
-    }, 1); 
-  } */
-
-/*   previousSlide() {
-    this.animateLeft = true;
-    this.animateRight = false;
-    setTimeout(() => {
-      this.animateLeft = false;
-      this.selectPrev();
-    }, 1000); 
-  } */
 
   selectNext() {
     const lastElement = this.testimonialDb.pop();
