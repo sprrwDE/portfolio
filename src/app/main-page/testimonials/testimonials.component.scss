@@ -17,6 +17,7 @@
     overflow-x: hidden;
     padding: 32px 0;
     position: relative;
+    height: 500px;
 
     > .wrapper {
       position: absolute;
@@ -28,9 +29,9 @@
       flex-direction: column;
       justify-content: space-between;
       font-size: 18px;
-      transition: all 1s ease;
+      transition: all 1s ease-in-out;
       height: 300px;
-
+      top: calc(50% - 200px);
 
       > .person {
         display: flex;
@@ -47,36 +48,37 @@
     }
 
     .selected {
-      transform: scale(1);
+      transform: scale(1.1);
       border: 1px solid #3dcfb6;
       background-color: #3dcfb64d;
       position: relative;
-      left: calc(50% - 250px);
-
+      left: calc(50% - 200px);
     }
 
     .prev {
       background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
-      transform: translateX(-10%) scale(0.9);
       border: 1px solid #3dcfb6;
-      left: -5%;
+      left: -100px;
     }
 
     .next {
       background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
-      transform: translateX(10%) scale(0.9);
       border: 1px solid #3dcfb6;
       overflow: hidden;
-      left: calc(50% + 250px);
+      left: calc(50% + 200px + 220px);
     }
 
     .hiddenl {
       opacity: 0;
+      background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
+      border: 1px solid #3dcfb6;
       left: -500px
     }
 
     .hiddenr {
       opacity: 0;
+      background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
+      border: 1px solid #3dcfb6;
       left: calc(100% + 600px);
     }
 
