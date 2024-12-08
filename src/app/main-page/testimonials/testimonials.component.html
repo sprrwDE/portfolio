@@ -11,7 +11,8 @@
         selected: i === selectedItem,
         prev: i === selectedItem - 1,
         next: i === selectedItem + 1,
-        hidden: i > selectedItem + 1 || i < selectedItem - 1
+        hiddenl: i < selectedItem - 1,
+        hiddenr: i > selectedItem + 1
       }"
     >
       <p>{{ testimonial.testimonial | translate }}</p>

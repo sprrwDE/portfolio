@@ -15,7 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class TestimonialsComponent {
   testimonialDb: Testimonial[] = [];
-  selectedItem: number = 1;
+  selectedItem: number = 4;
   selectedPage: number = 1;
 
   constructor(private testimonialService: TestimonialsService) {

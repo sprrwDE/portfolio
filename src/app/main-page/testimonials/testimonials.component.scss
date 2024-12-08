@@ -70,8 +70,14 @@
       left: calc(50% + 250px);
     }
 
-    .ghost {
+    .hiddenl {
+      opacity: 0;
+      left: -500px
+    }
 
+    .hiddenr {
+      opacity: 0;
+      left: calc(100% + 600px);
     }
 
     .quote {
