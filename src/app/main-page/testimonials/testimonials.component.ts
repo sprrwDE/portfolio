@@ -15,7 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class TestimonialsComponent {
   testimonialDb: Testimonial[] = [];
-  selectedItem: number = 4;
+  selectedItem: number = 1;
   selectedPage: number = 1;
 
   constructor(private testimonialService: TestimonialsService) {
@@ -23,20 +23,29 @@ export class TestimonialsComponent {
   }
 
   selectNext() {
-    const lastElement = this.testimonialDb.pop();
-    if (lastElement) {
-      this.testimonialDb.unshift(lastElement);
-    }
-    this.selectedPage = (this.selectedPage + 1) % this.testimonialDb.length;
+    const total = this.testimonialDb.length;
+    this.selectedPage = (this.selectedPage + 1) % total;
+    this.selectedItem = this.selectedPage;
   }
-
+  
   selectPrev() {
-    const firstElement = this.testimonialDb.shift();
-    if (firstElement) {
-      this.testimonialDb.push(firstElement);
-    }
-    this.selectedPage =
-      (this.selectedPage - 1 + this.testimonialDb.length) %
-      this.testimonialDb.length;
+    const total = this.testimonialDb.length;
+    this.selectedPage = (this.selectedPage - 1 + total) % total;
+    this.selectedItem = this.selectedPage;
   }
+  
+  get paginationDots() {
+    const total = this.testimonialDb.length;
+  
+    const prev = (this.selectedPage - 1 + total) % total;
+    const current = this.selectedPage;
+    const next = (this.selectedPage + 1) % total;
+  
+    return [
+      { index: prev, active: false },
+      { index: current, active: true },
+      { index: next, active: false },
+    ];
+  }
+  
 }
