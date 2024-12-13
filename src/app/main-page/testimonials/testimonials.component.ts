@@ -22,17 +22,22 @@ export class TestimonialsComponent {
     this.testimonialDb = this.testimonialService.getTestimonials();
   }
 
-  selectNext() {
+selectNext() {
     const total = this.testimonialDb.length;
-    this.selectedPage = (this.selectedPage + 1) % total;
-    this.selectedItem = this.selectedPage;
+    if (this.selectedPage < total - 1) {
+      this.selectedPage = this.selectedPage + 1
+      this.selectedItem = this.selectedPage; 
+    } else return
+
   }
   
   selectPrev() {
     const total = this.testimonialDb.length;
-    this.selectedPage = (this.selectedPage - 1 + total) % total;
-    this.selectedItem = this.selectedPage;
-  }
+    if (this.selectedPage > 0) {
+      this.selectedPage = this.selectedPage - 1
+      this.selectedItem = this.selectedPage; 
+    } else return
+  } 
   
   get paginationDots() {
     const total = this.testimonialDb.length;

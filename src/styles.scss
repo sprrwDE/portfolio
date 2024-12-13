@@ -99,10 +99,11 @@ button {
   padding: 16px;
   border-radius: 32px;
   width: 200px;
-  cursor: pointer;
+  cursor: pointer!important;
   overflow: hidden;
   &:hover {
-    background-color: $primary;
+    border: 1px solid $accent!important;
+    color: $accent!important;
   }
 }
 
