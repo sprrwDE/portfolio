@@ -105,6 +105,16 @@ button {
     border: 1px solid $accent!important;
     color: $accent!important;
   }
+  &[disabled] {
+    border: 1px solid grey;
+    color: grey;
+    cursor: not-allowed!important;
+    
+    &:hover {
+      border: 1px solid grey!important;
+      color: grey!important;
+    }
+  }
 }
 
 .button {
