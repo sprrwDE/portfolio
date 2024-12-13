@@ -48,12 +48,14 @@
   </div>
   <div class="carousel-wrapper">
     <div class="carousel">
-      <span
+      <div
         class="carousel-item fs32 fira accent"
         *ngFor="let item of 'hero.slider' | translate"
       >
-        {{ item.slide }}
-      </span>
+        <span>{{ item.slide }}</span>
+        <span>*</span>
+
+    </div>
     </div>
   </div>
 </section>
