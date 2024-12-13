@@ -98,9 +98,9 @@
       "terms": {
         "label": "",
         "placeholder": {
-          "part1": "Your message to me",
+          "part1": "You agree that I may use the specified data to process your request. You can find additional information on data protection and the right of withdrawal in my",
           "a": "Privacy Policy",
-          "part2": "Your message to me"
+          "part2": ""
         },
         "error": "Please accept the privacy policy"
       },

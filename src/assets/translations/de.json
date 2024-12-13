@@ -95,14 +95,14 @@
       "subject": {
         "label": "Nachricht",
         "placeholder": "Deine Nachricht an mich",
-        "error": "Bitte gib eine Nachricht"
+        "error": "Bitte gib eine Nachricht ein!"
       },
       "terms": {
         "label": "",
         "placeholder": {
-          "part1": "Deine Nachricht an mich",
+          "part1": "Du erklärst dich damit einverstanden, dass ich die angegebenen Daten zur Bearbeitung deines Anliegens verwenden darf. Weitere Datenschutz- und Widerrufshinweise findest du in meiner",
           "a": "Datenschutzerklärung",
-          "part2": "Deine Nachricht an mich"
+          "part2": ""
         },
         "error": "Bitte akzeptiere die Datenschutzbestimmungen"
       },
