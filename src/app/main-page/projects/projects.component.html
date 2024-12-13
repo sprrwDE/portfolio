@@ -30,8 +30,9 @@
         </div>
 
         <div class="skills">
-          <div *ngFor="let skill of project.skillset; let i = index">
-            {{ skill.name }}
+          <div *ngFor="let skill of project.skillset; let i = index" class="skills-inner">
+            <span>{{ skill.name }}</span>
+            <span *ngIf="i < project.skillset.length - 1" class="color">|</span>
           </div>
         </div>
       </div>
