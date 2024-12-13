@@ -94,7 +94,7 @@
       "email": {
         "label": "Email",
         "placeholder": "Your Email Address",
-        "error": "Please enter your email address!"
+        "error": "Please enter a valid Email address!"
       },
       "subject": {
         "label": "Message",

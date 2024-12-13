@@ -22,13 +22,14 @@ export class ContactComponent {
   http = inject(HttpClient);
 
   showConfirmation: boolean = false;
+  showEmailError:boolean = false;
 
   contactData: ContactData = {
     name: '',
     email: '',
     message: '',
     terms: '',
-  };
+  }
 
   mailTest = false;
 

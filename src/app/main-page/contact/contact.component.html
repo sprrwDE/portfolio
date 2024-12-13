@@ -21,7 +21,7 @@
       }}</label>
       <input
         #name="ngModel"
-        minlength="4"
+        minlength="2"
         [(ngModel)]="contactData.name"
         type="text"
         id="fname"
@@ -92,8 +92,9 @@
       </div>
 
       <button type="submit" class="button" [disabled]="formRef.invalid">
-        <span class="button-text first">{{ "contact.form.submit" | translate }}</span>
-        <span class="button-text last">{{ "contact.form.submit" | translate }}</span>
+        <span *ngIf="!formRef.invalid" class="button-text first">{{ "contact.form.submit" | translate }}</span>
+        <span *ngIf="!formRef.invalid" class="button-text last">{{ "contact.form.submit" | translate }}</span>
+        <span *ngIf="formRef.invalid" class="button-text">{{ "contact.form.submit" | translate }}</span>
       </button>
 
       <div *ngIf="showConfirmation" class="valid">

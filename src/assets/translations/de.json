@@ -96,7 +96,7 @@
       "email": {
         "label": "E-Mail",
         "placeholder": "Deine E-Mail Adresse",
-        "error": "Bitte gib deine E-Mail Adresse ein!"
+        "error": "Bitte gib eine gültige E-Mail Adresse ein!"
       },
       "subject": {
         "label": "Nachricht",
