@@ -13,9 +13,7 @@
       </a>
       <a href="#contact">
         <div class="button">
-          <span class="button-text first">{{
-            "hero.contact" | translate
-          }}</span>
+          <span class="button-text first">{{ "hero.contact" | translate }}</span>
           <span class="button-text last">{{ "hero.contact" | translate }}</span>
         </div>
       </a>
@@ -32,8 +30,7 @@
 
     <div class="contact">
       <a href="mailto:info@sparrowmedia.de" class="mail fs16"
-        >info&#64;sparrowmedia.de</a
-      >
+        >info&#64;sparrowmedia.de</a>
       <a href="https://github.com/sprrwDE" target="_blank" class="social"
         ><img src="assets/icons/github.svg" />
       </a>
@@ -46,16 +43,18 @@
       <div class="line-right"></div>
     </div>
   </div>
+
   <div class="carousel-wrapper">
     <div class="carousel">
-      <div
-        class="carousel-item fs32 fira accent"
-        *ngFor="let item of 'hero.slider' | translate"
-      >
-        <span>{{ item.slide }}</span>
-        <span>*</span>
-
-    </div>
+      <div class="carousel-track">
+        <div
+          class="carousel-item fs32 fira accent"
+          *ngFor="let item of 'hero.slider' | translate"
+        >
+          <span>{{ item.slide }}</span>
+          <span>*</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
