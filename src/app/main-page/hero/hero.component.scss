@@ -144,6 +144,15 @@ section {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        >.dot {
+          background-color: white;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          display: flex;
+          background-color: $accent;
+        }
       }
     }
   }
