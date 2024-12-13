@@ -29,6 +29,9 @@
       transition: all 1s ease-in-out;
       height: 250px;
       top: calc(50% - 200px);
+      @media screen and (max-width: 1460px) {
+        width: 400px;
+      }
 
       > .person {
         display: flex;
@@ -50,12 +53,18 @@
       background-color: #3dcfb64d;
       position: relative;
       left: calc(50% - 250px);
+      @media screen and (max-width: 1460px) {
+        left: calc(50% - 200px);
+      }
     }
 
     .prev {
       background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
       border: 1px solid #3dcfb6;
       left: -150px;
+      @media screen and (max-width: 1460px) {
+        left: -100px;
+      }
     }
 
     .next {
@@ -63,13 +72,16 @@
       border: 1px solid #3dcfb6;
       overflow: hidden;
       left: calc(50% + 250px + 120px);
+      @media screen and (max-width: 1460px) {
+        left: calc(50% + 200px + 200px);
+      }
     }
 
     .hiddenl {
       opacity: 0;
       background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
       border: 1px solid #3dcfb6;
-      left: -500px
+      left: -500px;
     }
 
     .hiddenr {
@@ -114,4 +126,4 @@
       cursor: pointer;
     }
   }
-} 
+}

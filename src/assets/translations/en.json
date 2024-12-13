@@ -108,7 +108,8 @@
           "a": "Privacy Policy",
           "part2": ""
         },
-        "error": "Please accept the privacy policy"
+        "error": "Please accept the privacy policy",
+        "valid": "The form was successfully sent"
       },
       "submit": "Submit ;)"
     }

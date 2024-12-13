@@ -110,7 +110,8 @@
           "a": "Datenschutzerklärung",
           "part2": ""
         },
-        "error": "Bitte akzeptiere die Datenschutzbestimmungen"
+        "error": "Bitte akzeptiere die Datenschutzbestimmungen",
+        "valid": "Das Formular wurde erfolgreich versendet"
       },
       "submit": "Absenden ;)"
     }

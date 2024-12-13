@@ -8,7 +8,7 @@ interface ContactData {
   name: string;
   email: string;
   message: string;
-  terms:string;
+  terms: string;
 }
 
 @Component({
@@ -19,20 +19,21 @@ interface ContactData {
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  http = inject(HttpClient);
 
-  http = inject(HttpClient)
+  showConfirmation: boolean = false;
 
   contactData: ContactData = {
     name: '',
     email: '',
     message: '',
-    terms: ''
+    terms: '',
   };
 
   mailTest = false;
 
   post = {
-    endPoint: 'https://kai-schulz.dev/sendMail.php', 
+    endPoint: 'https://kai-schulz.dev/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -44,11 +45,15 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.showConfirmation = true;
+            setTimeout(() => {
+              this.showConfirmation = false;
+            }, 1000);
           },
           error: (error) => {
             console.error(error);
@@ -56,7 +61,6 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }

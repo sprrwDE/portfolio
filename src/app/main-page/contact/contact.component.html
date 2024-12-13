@@ -96,6 +96,10 @@
         <span class="button-text last">{{ "contact.form.submit" | translate }}</span>
       </button>
 
+      <div *ngIf="showConfirmation" class="valid">
+        {{ "contact.form.terms.valid" | translate }}
+      </div>
+
     </form>
   </div>
 </div>
