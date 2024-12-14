@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  > .center {
+    text-align: center;
+  }
 
   > .outter {
     width: 100%;
@@ -17,7 +20,9 @@
     padding: 32px 0;
     position: relative;
     height: 500px;
-
+    @media screen and (max-width: $screen) {
+      height: 400px;
+    }
     > .wrapper {
       position: absolute;
       top: 0;
@@ -33,6 +38,7 @@
       top: calc(50% - 200px);
       @media screen and (max-width: $screen) {
         width: 400px;
+        top: calc(50% - 100px);
       }
       @media screen and (max-width: $laptop) {
         width: 400px;
@@ -45,9 +51,9 @@
         top: calc(50% - 100px);
         font-size: 14px;
       }
-      >.fit {
+      > .fit {
         @media screen and (max-width: $phone) {
-          font-size: 14px!important;
+          font-size: 14px !important;
         }
       }
 
@@ -66,13 +72,12 @@
           background-color: white;
           width: 100%;
           flex: 1;
-          >.moin {
+          > .moin {
             @media screen and (max-width: $phone) {
-              font-size: 12px!important;
+              font-size: 12px !important;
             }
           }
         }
-      
       }
     }
 
@@ -110,7 +115,7 @@
         left: -380px;
       }
       @media screen and (max-width: 600px) {
-        left: -78%!important;
+        left: -78% !important;
       }
     }
 

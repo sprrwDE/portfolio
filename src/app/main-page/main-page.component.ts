@@ -9,10 +9,16 @@ import { ContactComponent } from './contact/contact.component';
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [HeroComponent, AboutComponent, TechStackComponent, ProjectsComponent, TestimonialsComponent, ContactComponent],
+  imports: [
+    HeroComponent,
+    AboutComponent,
+    TechStackComponent,
+    ProjectsComponent,
+    TestimonialsComponent,
+    ContactComponent,
+  ],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.scss'
+  styleUrl: './main-page.component.scss',
 })
 export class MainPageComponent {
-
 }

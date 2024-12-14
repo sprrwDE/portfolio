@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
 
 interface ContactData {
   name: string;
@@ -22,14 +23,14 @@ export class ContactComponent {
   http = inject(HttpClient);
 
   showConfirmation: boolean = false;
-  showEmailError:boolean = false;
+  showEmailError: boolean = false;
 
   contactData: ContactData = {
     name: '',
     email: '',
     message: '',
     terms: '',
-  }
+  };
 
   mailTest = false;
 
@@ -43,6 +44,14 @@ export class ContactComponent {
       },
     },
   };
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    AOS.refresh();
+  }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {

@@ -6,13 +6,14 @@ import {
 import { CommonModule } from '@angular/common';
 import { DialogComponent } from './dialog/dialog.component';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [CommonModule, DialogComponent, TranslateModule],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
   projectDb: Project[] = [];
@@ -21,22 +22,27 @@ export class ProjectsComponent {
   currentIndex: number = 0;
   hoverImg: string;
 
-  constructor(
-    private projectService: ProjectsService,
-  ) {
+  constructor(private projectService: ProjectsService) {
     this.projectDb = this.projectService.getProjects();
     this.hoverImg = '';
   }
 
-  openDialog(index: number) { 
-    this.currentProject = this.projectDb[index]; 
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    AOS.refresh();
+  }
+
+  openDialog(index: number) {
+    this.currentProject = this.projectDb[index];
     this.isDialogOpen = true;
     this.currentIndex = index;
   }
 
   closeDialog() {
-    this.currentProject = null; 
+    this.currentProject = null;
     this.isDialogOpen = false;
   }
-
 }

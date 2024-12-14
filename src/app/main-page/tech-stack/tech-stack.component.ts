@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SkillsService, Skill } from '../../services/skills/skills.service';
 import { CommonModule } from '@angular/common';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-tech-stack',
@@ -17,6 +18,14 @@ export class TechStackComponent {
 
   constructor(private skillsService: SkillsService) {
     this.skillDb = this.skillsService.getSkills();
+  }
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    AOS.refresh();
   }
 
   onMouseOver() {
