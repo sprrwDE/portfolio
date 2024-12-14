@@ -70,6 +70,9 @@ main {
   @media screen and (max-width: 1440px) {
     padding: 80px 2% !important;
   }
+  @media screen and (max-width: $tab) {
+    padding: 80px 4% !important;
+  }
 }
 
 /* Link Styling */

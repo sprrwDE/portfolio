@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 .testi {
   padding: 120px 0;
   display: flex;
@@ -29,21 +31,48 @@
       transition: all 1s ease-in-out;
       height: 250px;
       top: calc(50% - 200px);
-      @media screen and (max-width: 1460px) {
+      @media screen and (max-width: $screen) {
         width: 400px;
+      }
+      @media screen and (max-width: $laptop) {
+        width: 400px;
+      }
+      @media screen and (max-width: $tab) {
+        width: 400px;
+      }
+      @media screen and (max-width: $phone) {
+        width: 80%;
+        top: calc(50% - 100px);
+        font-size: 14px;
+      }
+      >.fit {
+        @media screen and (max-width: $phone) {
+          font-size: 14px!important;
+        }
       }
 
       > .person {
         display: flex;
         align-items: center;
         gap: 8px;
+        @media screen and (max-width: $phone) {
+          gap: 0px;
+          font-size: 12px;
+          margin-top: 4px;
+        }
 
         > .horizontal {
           height: 1px;
           background-color: white;
           width: 100%;
           flex: 1;
+          >.moin {
+            @media screen and (max-width: $phone) {
+              font-size: 12px!important;
+            }
+          }
         }
+      
       }
     }
 
@@ -53,8 +82,17 @@
       background-color: #3dcfb64d;
       position: relative;
       left: calc(50% - 250px);
-      @media screen and (max-width: 1460px) {
+      @media screen and (max-width: $screen) {
         left: calc(50% - 200px);
+      }
+      @media screen and (max-width: $laptop) {
+        left: calc(50% - 45%);
+      }
+      @media screen and (max-width: $tab) {
+        left: calc(50% - 200px);
+      }
+      @media screen and (max-width: $phone) {
+        left: calc(50% - 40%);
       }
     }
 
@@ -62,8 +100,17 @@
       background: linear-gradient(90deg, #1c1c1c, #3dcfb61a);
       border: 1px solid #3dcfb6;
       left: -150px;
-      @media screen and (max-width: 1460px) {
+      @media screen and (max-width: $screen) {
         left: -100px;
+      }
+      @media screen and (max-width: $laptop) {
+        left: -100px;
+      }
+      @media screen and (max-width: $tab) {
+        left: -100px;
+      }
+      @media screen and (max-width: $phone) {
+        left: -78%!important;
       }
     }
 
@@ -72,8 +119,17 @@
       border: 1px solid #3dcfb6;
       overflow: hidden;
       left: calc(50% + 250px + 120px);
-      @media screen and (max-width: 1460px) {
+      @media screen and (max-width: $screen) {
         left: calc(50% + 200px + 200px);
+      }
+      @media screen and (max-width: $laptop) {
+        left: calc(50% + 200px + 200px);
+      }
+      @media screen and (max-width: $tab) {
+        left: calc(50% + 200px + 200px);
+      }
+      @media screen and (max-width: $phone) {
+        left: calc(100% - 1%);
       }
     }
 
@@ -81,7 +137,7 @@
       opacity: 0;
       background: linear-gradient(270deg, #1c1c1c, #3dcfb61a);
       border: 1px solid #3dcfb6;
-      left: -500px;
+      left: -200%;
     }
 
     .hiddenr {
@@ -96,6 +152,11 @@
       top: -13%;
       left: -10%;
       z-index: 99;
+      @media screen and (max-width: $phone) {
+        width: 40px;
+        top: -5%;
+        left: -5%;
+      }
     }
   }
 
