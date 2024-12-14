@@ -15,6 +15,9 @@ section {
     display: flex;
     justify-content: flex-start;
     position: relative;
+    @media screen and (max-width: $laptop) {
+      justify-content: center;
+    }
 
     > img {
       width: 100%;
@@ -24,7 +27,8 @@ section {
       object-position: center;
       position: relative;
       z-index: 2;
-      @media screen and (max-width: $tab) {
+      @media screen and (max-width: $laptop) {
+        width: 100%!important;
         height: 100%!important;
       }
     }

@@ -41,7 +41,7 @@
         &:hover {
           background-color: $primary;
         }
-        @media screen and (max-width: $tab) {
+        @media screen and (max-width: $laptop) {
           flex-direction: column!important;
           width: 100%!important;
           justify-content: flex-start!important;
@@ -59,7 +59,7 @@
           flex-direction: row;
           justify-content: flex-end;
           gap: 8px;
-          @media screen and (max-width: $tab) {
+          @media screen and (max-width: $laptop) {
             flex-direction: row!important;
             width: 100%!important;
             flex-wrap: wrap!important;

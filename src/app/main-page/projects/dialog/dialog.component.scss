@@ -27,9 +27,10 @@
     flex-direction: row;
     gap: 24px;
     padding: 40px;
-    @media screen and (max-width: $tab) {
-      flex-direction: column;
-      width: 100%;
+    @media screen and (max-width: $laptop) {
+      flex-direction: column-reverse;
+      width: 95%;
+      height: auto;
     }
 
     >.text-wrapper{
@@ -38,11 +39,15 @@
       flex-direction: column;
       justify-content: center;
       gap: 16px;
+  
       >.skill-wrapper{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 8px;
+        @media screen and (max-width: $tab) {
+          flex-wrap: wrap;
+         }
         >.skill-inner {
           display: flex;
           align-items: center;
@@ -57,6 +62,13 @@
         align-items: center;
         gap: 24px;
         margin: 40px 40px 0 0;
+        @media screen and (max-width: $laptop) {
+          margin: 16px 16px 0 0;
+        }
+        @media screen and (max-width: $tab) {
+          flex-wrap: wrap;
+          margin-bottom: 8px;
+         }
       } .button-dial {
         border: 1px solid white;
         background-color: transparent;
@@ -70,6 +82,9 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+        @media screen and (max-width: $tab) {
+          width: 100%!important;
+         }
         > img {
           height: 16px;
           transform: rotate(315deg);
@@ -104,7 +119,20 @@
             transform: scale(1.1) rotate(90deg);
             filter: invert(61%) sepia(43%) saturate(722%) hue-rotate(132deg) brightness(110%) contrast(100%);
           }
+          @media screen and (max-width: $laptop) {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+          }
         }
+      }
+      >.projectimg{
+        @media screen and (max-width: $laptop) {
+         width: 80%;
+        }
+        @media screen and (max-width: $tab) {
+          width: 100%;
+         }
       }
       
       >.next{
@@ -114,6 +142,11 @@
         align-items: center;
         flex-direction: row;
         justify-content: flex-end;
+        @media screen and (max-width: $laptop) {
+          position: absolute;
+          bottom: 16px;
+          right: 16px;
+        }
       } .next-inner {
         display: flex;
         align-items: center;
