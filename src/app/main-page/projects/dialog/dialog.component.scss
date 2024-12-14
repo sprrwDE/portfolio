@@ -27,6 +27,7 @@
     flex-direction: row;
     gap: 24px;
     padding: 40px;
+    max-width: 1440px;
     @media screen and (max-width: $laptop) {
       flex-direction: column-reverse;
       width: 95%;
