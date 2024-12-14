@@ -54,7 +54,7 @@ export class ContactComponent {
             this.showConfirmation = true;
             setTimeout(() => {
               this.showConfirmation = false;
-            }, 1000);
+            }, 3000);
           },
           error: (error) => {
             console.error(error);
