@@ -212,7 +212,10 @@ button {
 .fs128 {
   font-size: 128px;
   @media screen and (max-width: $laptop) {
-    font-size: 62px !important;
+    font-size: 72px !important;
+  }
+  @media screen and (max-width: $phone) {
+    font-size: 48px !important;
   }
 }
 
@@ -221,11 +224,17 @@ button {
   @media screen and (max-width: $laptop) {
     font-size: 56px !important;
   }
+  @media screen and (max-width: $phone) {
+    font-size: 40px !important;
+  }
 }
 
 .fs40 {
   font-size: 40px;
   @media screen and (max-width: $laptop) {
+    font-size: 32px !important;
+  }
+  @media screen and (max-width: $phone) {
     font-size: 24px !important;
   }
 }
@@ -234,6 +243,9 @@ button {
   font-size: 32px;
   @media screen and (max-width: $laptop) {
     font-size: 24px !important;
+  }
+  @media screen and (max-width: $phone) {
+    font-size: 16px !important;
   }
 }
 
