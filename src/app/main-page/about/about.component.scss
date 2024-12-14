@@ -6,7 +6,7 @@ section {
   justify-content: space-between;
   padding: 160px 0;
   gap: 120px;
-  @media screen and (max-width: $tab) {
+  @media screen and (max-width: $laptop) {
     flex-direction: column!important;
     gap: 0px;
   }

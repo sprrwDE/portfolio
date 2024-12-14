@@ -1,37 +1,31 @@
 @import "./../../../styles.scss";
 
 section {
-
-  background: radial-gradient(
-    circle at left center, /* Halbkreis von der linken Mitte */
-    $primary, /* Innere Farbe */
-    transparent 20% /* Übergang zu Transparent */
-  );
-  >.outter-wrapper {
+  background: radial-gradient(circle at left center, $primary, transparent 20%);
+  > .outter-wrapper {
     display: flex;
     gap: 120px;
     padding: 180px 0;
-    @media screen and (max-width: $tab) {
-      padding: 0!important;
-      gap: 32px!important;
-      flex-direction: column!important;
-      align-items: center!important;
-      padding: 80px 2%!important;
-
+    @media screen and (max-width: $laptop) {
+      padding: 0 !important;
+      gap: 32px !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      padding: 80px 2% !important;
     }
     > .content-wrapper {
       display: flex;
       flex-direction: column;
       gap: 16px;
       width: 40%;
-      @media screen and (max-width: $tab) {
-        width: 100%!important;
+      @media screen and (max-width: $laptop) {
+        width: 100% !important;
       }
       > .content {
         border-radius: 20px;
-        border: 2px solid #3DCFB6;
+        border: 2px solid #3dcfb6;
         padding: 32px;
-        background-color: #3DCFB61A;
+        background-color: #3dcfb61a;
         backdrop-filter: blur(4px);
         display: flex;
         flex-direction: column;
@@ -51,11 +45,11 @@ section {
         justify-content: center;
         width: 15%;
         height: auto;
-        @media screen and (max-width: $tab) {
-          width: 15%!important;
-          margin: 0 auto!important;
+        @media screen and (max-width: $laptop) {
+          width: 15% !important;
+          margin: 0 auto !important;
         }
-        >.inner-wrapper{
+        > .inner-wrapper {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -63,20 +57,20 @@ section {
           text-align: center;
           gap: 16px;
           position: relative;
-          >img{
-            transform: scale(1.0);
+          > img {
+            transform: scale(1);
             transition-duration: 200ms;
             &:hover {
               transform: scale(1.2);
               transition-duration: 200ms;
             }
           }
-          >.test {
+          > .test {
             position: absolute;
             top: -100px;
             left: 0;
             &:hover {
-              transform: scale(1.0);
+              transform: scale(1);
               transition-duration: 200ms;
             }
           }
@@ -84,5 +78,4 @@ section {
       }
     }
   }
-  
-  }
+}
