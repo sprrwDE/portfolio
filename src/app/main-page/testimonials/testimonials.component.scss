@@ -101,7 +101,7 @@
       border: 1px solid #3dcfb6;
       left: -150px;
       @media screen and (max-width: $screen) {
-        left: -100px;
+        left: -200px;
       }
       @media screen and (max-width: $laptop) {
         left: -300px;
@@ -120,7 +120,7 @@
       overflow: hidden;
       left: calc(50% + 250px + 120px);
       @media screen and (max-width: $screen) {
-        left: calc(50% + 200px + 200px);
+        left: calc(100% - 17%);
       }
       @media screen and (max-width: $laptop) {
         left: calc(100% - 12%);
