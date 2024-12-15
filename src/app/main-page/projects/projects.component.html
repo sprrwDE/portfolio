@@ -13,6 +13,7 @@
       *ngFor="let project of projectDb; let index = index"
       (click)="openDialog(index)"
       class="wrapper"
+      (mouseout)="hoverImg = ''"
     >
       <div
         class="content"
