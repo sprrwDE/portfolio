@@ -122,7 +122,75 @@
     "data": "Privacy Policy"
   },
   "dse": {
-    "h1": "Data Protection Declaration"
+    "h1": "Privacy Policy",
+    "s1": {
+      "hl": "INFORMATION ON THE COLLECTION OF PERSONAL DATA",
+      "p1": "(1) Below we inform you about the collection of personal data when using our website. Personal data includes all data that can be related to you personally, e.g., name, address, email addresses, user behavior. Through this, we aim to inform you about our processing activities and fulfill our legal obligations, particularly under the EU General Data Protection Regulation (GDPR).",
+      "p2": "(2) The data controller according to Art. 4 para. 7 EU General Data Protection Regulation (GDPR) is Altenweg 47, 75228 Ispringen,",
+      "p3": "(3) When you contact us via email or a contact form, the data you provide (your email address, and if applicable, your name and phone number) is stored by us to answer your inquiries. Any data arising in this context will be deleted once it is no longer required for the purpose of the inquiry unless it pertains to a contract and must be retained for the duration of the contract. Otherwise, the data will be deleted or its processing restricted if legal retention periods apply.",
+      "p4": "(4) If we rely on commissioned service providers for individual functionalities of our offerings or if we wish to use your data for promotional purposes, we will carefully select and monitor these service providers and inform you below in detail about the respective processes. We will also specify the set criteria for the storage duration."
+    },
+    "s2": {
+      "hl": "YOUR RIGHTS",
+      "p1": "(1) You have the following rights regarding your personal data:",
+      "li": {
+        "l1": "Right to access",
+        "l2": "Right to rectification or erasure",
+        "l3": "Right to restriction of processing",
+        "l4": "Right to object to processing",
+        "l5": "Right to data portability"
+      },
+      "p2": "(2) You also have the right to file a complaint with a data protection supervisory authority about the processing of your personal data by us."
+    },
+    "s3": {
+      "hl": "COLLECTION OF PERSONAL DATA WHEN VISITING OUR WEBSITE",
+      "p1": "COLLECTION OF PERSONAL DATA WHEN VISITING OUR WEBSITE",
+      "li": {
+        "l1": "IP address",
+        "l2": "Date and time of the request",
+        "l3": "Time zone difference to Greenwich Mean Time (GMT)",
+        "l4": "Content of the request (specific page)",
+        "l5": "Access status/HTTP status code",
+        "l6": "Amount of data transmitted",
+        "l7": "Website from which the request comes",
+        "l8": "Browser",
+        "l9": "Operating system and its interface",
+        "l10": "Language and version of the browser software"
+      },
+      "p2": {
+        "1": "(2) In addition to the aforementioned data, cookies may be stored on your computer during your use of our website. Cookies are small text files stored on your hard drive, associated with the browser you use, and through which certain information flows to the entity setting the cookie (in this case, us). Cookies cannot execute programs or transfer viruses to your computer. They serve to make the internet offering more user-friendly and effective overall (legal basis is Art. 6 para. 1 sentence 1 lit. a GDPR). You can delete or block cookies at any time through the settings in your browser.",
+        "2": "Furthermore, we may use technologies such as local storage or session storage in the future. Local storage allows data to be stored in the cache of your browser, remaining even after the browser is closed unless actively deleted. Local storage enables your preferences to be saved locally and reused on your computer. Session storage works similarly but is deleted immediately after closing the browser ('session'). These technologies ensure that third parties cannot access or use this data. They are primarily employed to provide you with an appealing graphical presentation of our content and personalize our offerings and navigation for you. You can manage local storage settings via the 'History' or 'Local Data' settings in your browser."
+      },
+      "p3": "(3) We primarily use the techniques described above to enhance user-friendliness and the functionality of our websites. The lawful basis for this is our legitimate interest in providing you with a functional and attractive offer, as per Article 6 para. 1 lit. f GDPR. If additional consent for the use of cookies is required, we will explicitly ask for your consent in the relevant context. In cases where cookies are used based on your consent, the legal basis is Art. 6 para. 1 sentence 1 lit. a GDPR. If you do not wish to allow the use of the described technologies, you can configure your browser settings accordingly.",
+      "p4": {
+        "hl": "(4) Special Cookie Declaration:",
+        "a": {
+          "text": "a) This website may use the following types of cookies, whose scope and functionality are explained below:",
+          "l1": "Transient cookies (see b)",
+          "l2": "Persistent cookies (see c)"
+        },
+        "b": "b) Transient cookies are automatically deleted when you close the browser. These include session cookies that store a session ID, allowing different requests from your browser to be assigned to the same session. This enables your computer to be recognized when you return to our website. Session cookies are deleted when you log out or close the browser.",
+        "c": "c) Persistent cookies are automatically deleted after a specified period, which can vary depending on the cookie. You can delete cookies at any time in the security settings of your browser.",
+        "d": "d) You can configure your browser settings to reject third-party cookies or all cookies. Please note that this may limit the functionality of this website."
+      }
+    },
+    "s4": {
+      "hl": "OTHER FUNCTIONS AND SERVICES ON OUR WEBSITE",
+      "p1": "(1) In addition to the purely informational use of our website, we may offer various services that you can use if interested. Generally, you must provide additional personal data for these services, which we use to provide the respective service and for which the principles of data processing mentioned above apply.",
+      "p2": "(2) We sometimes use external service providers to process your data. These providers are carefully selected and commissioned, are bound by our instructions, and are regularly monitored.",
+      "p3": "(3) Furthermore, we may share your personal data with third parties when participating in promotions, sweepstakes, contract conclusions, or similar services in cooperation with partners. Detailed information will be provided when your personal data is collected or in the description of the offering below.",
+      "p4": "(4) If our service providers or partners are located in a country outside the European Economic Area (EEA), we will inform you about the consequences of this circumstance in the description of the offering."
+    },
+    "s5": {
+      "hl": "OBJECTION OR WITHDRAWAL OF YOUR DATA PROCESSING",
+      "p1": "(1) If you have given consent to the processing of your data, you can withdraw it at any time. Such withdrawal will affect the lawfulness of the processing of your personal data after you have notified us of it.",
+      "p2": "(2) If we base the processing of your personal data on a legitimate interest, you may object to the processing. This applies particularly if the processing is not necessary for fulfilling a contract with you, as we explain in the following descriptions of the functions. When exercising such an objection, please explain the reasons why we should not process your personal data as we do. In case of a justified objection, we will review the matter and either stop or adjust the data processing or demonstrate to you our compelling legitimate grounds for continuing the processing.",
+      "p3": "(3) Of course, you can object to the processing of your personal data for advertising and data analysis purposes at any time. You can notify us of your objection to advertising using the following contact details: Altenweg 47, 75228 Ispringen,"
+    },
+    "s6": {
+      "hl": "DURATION OF PERSONAL DATA STORAGE",
+      "p": "We store personal data in accordance with the statutory retention periods (e.g., under commercial and tax law). After these periods expire, the data will be deleted unless it is still required for contract fulfillment or there is a legitimate interest in its further storage."
+    }
   },
   "imprint": {
     "h1": "Imprint",
@@ -139,21 +207,21 @@
       "l2": {
         "text1": "Information on alternative dispute resolution according to § 36 of the Consumer Dispute Resolution Act (VSBG) (available at",
         "text2": "): The operator of this website is neither willing nor obliged to participate in a dispute resolution procedure before a consumer arbitration board."
-      }},
-      "content": "RESPONSIBLE FOR CONTENT ACCORDING TO § 18 PARA. 2 MSTV",
-      "disclaimer": {
-        "headline": "LIABILITY",
-        "p1": "We are responsible for the contents of our internet pages in accordance with the general laws, particularly § 7 para. 1 of the Telemedia Act. All content is created with the utmost care and to the best of our knowledge. As far as we refer to third-party websites via hyperlinks on our internet pages, we cannot guarantee the continuous currentness, accuracy, and completeness of the linked content, as these contents are outside our area of responsibility and we have no influence on their future design. If you consider any content to violate applicable law or be inappropriate, please inform us.",
-        "p2": "The legal notices on this page as well as all questions and disputes related to the design of this website are subject to the law of the Federal Republic of Germany."
-      },
-      "data": {
-        "hl": "DATA PROTECTION",
-        "p1": "You can find our data protection information at"
-      },
-      "owner": {
-        "hl": "COPYRIGHT NOTICE",
-        "p": "The texts, images, photos, videos, or graphics on our website are generally protected by copyright. Any unauthorized use (especially reproduction, editing, or distribution) of these copyrighted contents is therefore prohibited. If you intend to use these contents or parts thereof, please contact us in advance using the above details. If we are not the holders of the required copyright usage rights, we will endeavor to establish contact with the rights holder."
       }
+    },
+    "content": "RESPONSIBLE FOR CONTENT ACCORDING TO § 18 PARA. 2 MSTV",
+    "disclaimer": {
+      "headline": "LIABILITY",
+      "p1": "We are responsible for the contents of our internet pages in accordance with the general laws, particularly § 7 para. 1 of the Telemedia Act. All content is created with the utmost care and to the best of our knowledge. As far as we refer to third-party websites via hyperlinks on our internet pages, we cannot guarantee the continuous currentness, accuracy, and completeness of the linked content, as these contents are outside our area of responsibility and we have no influence on their future design. If you consider any content to violate applicable law or be inappropriate, please inform us.",
+      "p2": "The legal notices on this page as well as all questions and disputes related to the design of this website are subject to the law of the Federal Republic of Germany."
+    },
+    "data": {
+      "hl": "DATA PROTECTION",
+      "p1": "You can find our data protection information at"
+    },
+    "owner": {
+      "hl": "COPYRIGHT NOTICE",
+      "p": "The texts, images, photos, videos, or graphics on our website are generally protected by copyright. Any unauthorized use (especially reproduction, editing, or distribution) of these copyrighted contents is therefore prohibited. If you intend to use these contents or parts thereof, please contact us in advance using the above details. If we are not the holders of the required copyright usage rights, we will endeavor to establish contact with the rights holder."
     }
   }
-
+}
