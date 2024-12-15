@@ -85,8 +85,8 @@ export class ProjectsService {
       image: 'assets/images/pokedex.jpg',
       description: 'projects.bubble.description',
       urls: {
-        project: '',
-        github: '',
+        project: 'https://pokedex.kai-schulz.dev/',
+        github: 'https://github.com/sprrwDE/pokedex',
       },
       skillset: [
         {
@@ -98,16 +98,9 @@ export class ProjectsService {
           image: 'assets/icons/project-skillset/CSS.svg',
         },
         {
-          name: 'TypeScript',
+          name: 'JavaScript',
           image: 'assets/icons/project-skillset/TypeScript.svg',
-        },{
-          name: 'Angular',
-          image: 'assets/icons/project-skillset/Angular.svg',
-        },
-        {
-          name: 'Firebase',
-          image: 'assets/icons/project-skillset/Firebase.svg',
-        },
+        }
       ],
     },
   ];

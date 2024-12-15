@@ -122,5 +122,11 @@
     "portfolio": "Marketing Portfolio",
     "imprint": "Impressum",
     "data": "Datenschutzerklärung"
+  },
+  "imprint": {
+    "h1": "Impressum"
+  },
+  "dse": {
+    "h1": "Datenschutzerklärung"
   }
 }

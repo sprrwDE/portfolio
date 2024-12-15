@@ -120,5 +120,11 @@
     "portfolio": "Marketing Portfolio",
     "imprint": "Imprint",
     "data": "Privacy Policy"
+  },
+  "imprint": {
+    "h1": "Imprint"
+  },
+  "dse": {
+    "h1": "Data Protection Declaration"
   }
 }
