@@ -34,7 +34,7 @@ export class ProjectsService {
       description: 'projects.join.description',
       urls: {
         project: 'https://join.kai-schulz.dev/',
-        github: 'https://github.com/67Trane/join',
+        github: 'https://github.com/sprrwDE/join',
       },
       skillset: [
         {

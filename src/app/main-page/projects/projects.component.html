@@ -13,7 +13,6 @@
       *ngFor="let project of projectDb; let index = index"
       (click)="openDialog(index)"
       class="wrapper"
-      (mouseout)="hoverImg = ''"
     >
       <div
         class="content"
@@ -30,7 +29,10 @@
         </div>
 
         <div class="skills">
-          <div *ngFor="let skill of project.skillset; let i = index" class="skills-inner">
+          <div
+            *ngFor="let skill of project.skillset; let i = index"
+            class="skills-inner"
+          >
             <span>{{ skill.name }}</span>
             <span *ngIf="i < project.skillset.length - 1" class="color">|</span>
           </div>
