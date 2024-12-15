@@ -121,10 +121,39 @@
     "imprint": "Imprint",
     "data": "Privacy Policy"
   },
-  "imprint": {
-    "h1": "Imprint"
-  },
   "dse": {
     "h1": "Data Protection Declaration"
+  },
+  "imprint": {
+    "h1": "Imprint",
+    "provider": "PROVIDER OF THE WEBSITE",
+    "tel": "Phone: 017620231484",
+    "form": "Company form: Freelancer",
+    "job": "Professional or job title: Web Designer",
+    "fight": {
+      "h2": "DISPUTE RESOLUTION",
+      "l1": {
+        "text1": "The European Commission provides a platform for out-of-court online dispute resolution (OS platform), which is accessible at",
+        "text2": ". You can find our email address in our imprint. We are neither obliged nor willing to participate in a dispute resolution process."
+      },
+      "l2": {
+        "text1": "Information on alternative dispute resolution according to § 36 of the Consumer Dispute Resolution Act (VSBG) (available at",
+        "text2": "): The operator of this website is neither willing nor obliged to participate in a dispute resolution procedure before a consumer arbitration board."
+      }},
+      "content": "RESPONSIBLE FOR CONTENT ACCORDING TO § 18 PARA. 2 MSTV",
+      "disclaimer": {
+        "headline": "LIABILITY",
+        "p1": "We are responsible for the contents of our internet pages in accordance with the general laws, particularly § 7 para. 1 of the Telemedia Act. All content is created with the utmost care and to the best of our knowledge. As far as we refer to third-party websites via hyperlinks on our internet pages, we cannot guarantee the continuous currentness, accuracy, and completeness of the linked content, as these contents are outside our area of responsibility and we have no influence on their future design. If you consider any content to violate applicable law or be inappropriate, please inform us.",
+        "p2": "The legal notices on this page as well as all questions and disputes related to the design of this website are subject to the law of the Federal Republic of Germany."
+      },
+      "data": {
+        "hl": "DATA PROTECTION",
+        "p1": "You can find our data protection information at"
+      },
+      "owner": {
+        "hl": "COPYRIGHT NOTICE",
+        "p": "The texts, images, photos, videos, or graphics on our website are generally protected by copyright. Any unauthorized use (especially reproduction, editing, or distribution) of these copyrighted contents is therefore prohibited. If you intend to use these contents or parts thereof, please contact us in advance using the above details. If we are not the holders of the required copyright usage rights, we will endeavor to establish contact with the rights holder."
+      }
+    }
   }
-}
+
