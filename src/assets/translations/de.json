@@ -56,8 +56,8 @@
       "description": "Kai der Hai ist ein 2D-Sidescroller Browserspiel in welchem man einen Hai durch gefährliche Gewässer steuern und mit verschiedenen Attacken Gegner bekämpfen kann"
     },
     "bubble": {
-      "name": "DABubble",
-      "description": "DABubble ist ein Chat-Messenger im Stil von Slack. Das Projekt befindet sich derzeit noch in der Entwicklung."
+      "name": "Pokedex",
+      "description": "Pokedex ist eine Website welche Pokémon und ihre Eigenschaften über die Poke-API abruft und anzeigt."
     },
     "button": "Nächstes Projekt"
   },

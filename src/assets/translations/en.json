@@ -55,8 +55,8 @@
       "description": "Kai the Shark is a 2D side-scroller browser game where you navigate a shark through dangerous waters and fight enemies with various attacks."
     },
     "bubble": {
-      "name": "DABubble",
-      "description": "DABubble is a chat messenger inspired by Slack. The project is currently under development."
+      "name": "Pokedex",
+      "description": "Pokedex is a website that retrieves and displays information about Pokémon and their attributes via the Poke API."
     },
     "button": "Next Project"
   },

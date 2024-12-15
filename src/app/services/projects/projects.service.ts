@@ -34,7 +34,7 @@ export class ProjectsService {
       description: 'projects.join.description',
       urls: {
         project: 'https://join.kai-schulz.dev/',
-        github: '',
+        github: 'https://github.com/67Trane/join',
       },
       skillset: [
         {
@@ -82,7 +82,7 @@ export class ProjectsService {
     {
       name: 'projects.bubble.name',
       tag: 'bubble',
-      image: 'assets/images/bubble.jpeg',
+      image: 'assets/images/pokedex.jpg',
       description: 'projects.bubble.description',
       urls: {
         project: '',
