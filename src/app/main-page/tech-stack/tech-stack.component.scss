@@ -46,8 +46,8 @@ section {
         width: 15%;
         height: auto;
         @media screen and (max-width: $laptop) {
-          width: 15% !important;
-          margin: 0 auto !important;
+          width: 25% !important;
+          margin-left: 10%;
         }
         > .inner-wrapper {
           display: flex;
