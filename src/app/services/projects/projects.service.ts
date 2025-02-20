@@ -33,7 +33,7 @@ export class ProjectsService {
       image: 'assets/images/join.jpeg',
       description: 'projects.join.description',
       urls: {
-        project: 'https://join.kai-schulz.dev/',
+        project: 'https://join.sprrw.de/',
         github: 'https://github.com/sprrwDE/join',
       },
       skillset: [
@@ -61,7 +61,7 @@ export class ProjectsService {
       image: 'assets/images/sharky.jpeg',
       description: 'projects.sharky.description',
       urls: {
-        project: 'https://sharky.kai-schulz.dev/',
+        project: 'https://sharky.sprrw.de/',
         github: 'https://github.com/sprrwDE/sharkie',
       },
       skillset: [
@@ -85,7 +85,7 @@ export class ProjectsService {
       image: 'assets/images/pokedex.jpg',
       description: 'projects.bubble.description',
       urls: {
-        project: 'https://pokedex.kai-schulz.dev/',
+        project: 'https://pokedex.sprrw.de',
         github: 'https://github.com/sprrwDE/pokedex',
       },
       skillset: [
